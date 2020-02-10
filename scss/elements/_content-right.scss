@@ -1,0 +1,75 @@
+// -----------------------
+// banner home
+// -----------------------
+.curso-cc,
+#page-mod-book-view #region-main .curso-cc,
+#region-main .curso-cc{
+	
+	.content-cc.article{
+		
+		.blocks{
+			position: sticky;
+			top: 0;
+			border: 1px solid $color_grey;
+			
+			.top-block{
+				padding: 1rem;
+				
+				.counter{
+					
+					.italic{
+						margin: 1rem 0 0;
+					}
+					
+					p,
+					.eta{
+						text-align: center;
+						@include font_universal (
+							$font_family_line_height: 19px,
+							$font_family_weight: 300,
+							$font_family_size: 16px,
+							$font_family_color: $color_text,
+							$font_family_letter_spacing: 1px,
+							$font_family_group: $font_myriad_pro
+						);
+					}
+					
+				}
+				
+				a{
+					
+					&:first-child{
+						margin-top: 0;
+					}
+					
+					&:last-child{
+						margin-bottom: 0;
+					}
+					
+				}
+				
+			}
+			
+			.bottom-block{
+				padding: 1rem;
+				background: $color_grey;
+				
+				a{
+					
+					&:first-child{
+						margin-top: 0;
+					}
+					
+					&:last-child{
+						margin-bottom: 0;
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}

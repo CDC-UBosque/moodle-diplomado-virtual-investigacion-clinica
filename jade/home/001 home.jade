@@ -1,0 +1,67 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc#home
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+			
+				//- header	
+				div#banner
+					+header-block('header-home', 'Diplomado virtual de investigación clínica')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						h3 Contenidos
+						
+						p Para navegar por los contenidos del curso, puede usar el menú que se encuentra en la parte superior, los diferentes módulos que se trabajarán en el Diplomado Virtual de Investigación Clínica se irán mostrando conforme avanza el diplomado y llegue su fecha correspondiente.
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.lineamientos
+							div.wow.fadeInUp
+								h3 Lineamientos
+								div.elementos
+									div
+										img(src="https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-investigacion-clinica-amgen/images/assets/lineamientos.jpg")
+										
+									p Bienvenidos al Diplomado Virtual de Investigación Clínica, para conocer más información sobre los lineamientos y guías del diplomado puede acceder en el siguiente enlace.
+									a(href="#" class="white-btn") Ver lineamientos <i class="fas fa-external-link-alt"></i> 
+									
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+		
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

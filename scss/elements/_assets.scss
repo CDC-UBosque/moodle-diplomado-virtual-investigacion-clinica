@@ -1,0 +1,57 @@
+$mobile: 380px;
+$mobile-medida: 380; //tamaño para calculo
+$tablet-3: 500px;
+$tablet-2: 600px;
+$tablet-1: 700px;
+$tablet: 788px; //768px;
+$tablet-medida: 788; //tamaño para calculo
+$desktop-small: 980px;
+$desktop-medida: 1180; // tamaño descontando padding para calculo
+
+// -----------------------
+// media queries
+// -----------------------
+$breakpoint_1: 1000px;
+$breakpoint_2: 780px;
+$breakpoint_3: 550px;
+$breakpoint_4: 350px;
+
+// -----------------------
+// color text
+// -----------------------
+$color_text: #000000;
+
+// -----------------------
+// general colors
+// -----------------------
+$color_brand_blue:  #0063C3;
+$color_grey:  #D0E5D7;
+$color_white:  #ffffff;
+$color_grey: #EFEFEF;
+$color_gradient: #21185A;
+
+
+// -----------------------
+// font family helevetica neue condensed
+// -----------------------
+$font_hel_light: 'HelveticaNeueLTStd-Lt'; // light
+$font_hel_light_italic: 'HelveticaNeueLTStd-LtCnO'; // light condensed oblique
+$font_hel_black_italic: 'HelveticaNeueLTStd-BlkCnO'; // black condensed oblique
+$font_hel_black: 'HelveticaNeueLTStd-BlkCn'; // black condensed
+$font_hel_medium: 'HelveticaNeueLTStd-MdCn'; // medium condensed
+$font_hel_light_cond: 'HelveticaNeueLTStd-LtCn'; // light condensed
+
+// -----------------------
+// font family myriad pro
+// -----------------------
+$font_myriad_pro: 'myriad-pro', sans-serif;
+
+
+// -----------------------
+// font family Arial
+// -----------------------
+$font_arial_bold_italic: 'Arial-bold-italic'; // light
+$font_arial_bold: 'Arial-bold'; // light
+$font_arial_black: 'Arial-black'; // light condensed oblique
+$font_arial_italic: 'Arial-italic'; // black condensed oblique
+$font_arial: 'Arial'; // black condensed

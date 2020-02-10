@@ -1,0 +1,217 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 1')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-1')
+						
+						h2 3. ¿Cómo se realiza la concepción y formulación de la pregunta de investigación?
+						
+						p La pregunta de investigación es la incertidumbre que un investigador busca resolver mediante el desarrollo de un estudio.
+						p El reto de buscar un pregunta de investigación es hallar una importante, de tal manera que pueda transformarse en plan de estudio válido y viable.
+
+						p La clave de una buena investigación está en una buena pregunta. Toda investigación, análisis o estudio tiene como punto de partida la presencia de una situación percibida como problemática, es decir, que es causa de malestar y que en consecuencia, exige una explicación. Esta situación problemática persistirá hasta que exista una correspondencia o discordancia entre la explicación propuesta del fenómeno y la observación de la realidad. La pregunta de investigación refleja la incertidumbre acerca de algo existente en la población que el investigador quiere resolver mediante la realización de mediciones en los sujetos del estudio. Existen innumerables preguntas de investigación; el reto no es encontrar preguntas de investigación, sino la dificultad de encontrar una pregunta importante que se pueda transformar a la vez en un plan de estudio válido y factible.
+
+						p Los orígenes de las preguntas de investigación son diversos y pueden derivasrse de las siguientes fuentes:
+						
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#1' data-toggle='tab') 1
+								li: a(href='#2' data-toggle='tab') 2
+								li: a(href='#3' data-toggle='tab') 3
+								li: a(href='#4' data-toggle='tab') 4
+								
+							+set('content')
+								div.tab-pane.fade.active.in#1
+									p Experiencia: preguntas derivadas de estudios anteriores o de la misma práctica clínica.
+								div.tab-pane.fade#2
+									p Conocimiento a fondo la bibliografía: el leer estudios relacionados con el tema ayuda a plantear nuevas preguntas.  
+								div.tab-pane.fade#3
+									p Congresos, reuniones, discusiones clínicas con colegas.
+								div.tab-pane.fade#4
+									p Contacto con expertos en el tema.
+									
+						p Es importante estar alerta a ideas y técnicas nuevas, pero se debe mantener una buena dosis de escepticismo a prácticas aceptadas sin base científica. Ser abierto a la aplicación de conceptos y tecnologías a campos diferentes al de siempre.
+						
+						//- ---------------- 
+						//- ---------------- Resaltado text
+						//- ----------------			
+						div.resaltado-txt
+							p Es fundamental mantener viva la imaginación, mediante las siguientes estrategias:
+							
+							//- ---------------- 
+							//- ---------------- Tabs
+							//- ---------------- 
+							+tabs-containers
+								+set('titles')
+									li.active: a(href='#5' data-toggle='tab') 1
+									li: a(href='#6' data-toggle='tab') 2
+									li: a(href='#7' data-toggle='tab') 3
+									li: a(href='#8' data-toggle='tab') 4
+									li: a(href='#9' data-toggle='tab') 5
+									
+								+set('content')
+									div.tab-pane.fade.active.in#5
+										p Observar meticulosamente la práctica diaria.
+									div.tab-pane.fade#6
+										p La enseñanza como fuente de ideas. 
+									div.tab-pane.fade#7
+										p Escritura de las ideas que surjan.
+									div.tab-pane.fade#8
+										p Creatividad: nuevos métodos para preguntas antiguas.
+									div.tab-pane.fade#9
+										p Tenacidad, persistencia en el propósito de encontrar soluciones a los problemas clínicos.
+						
+						
+						
+
+						p En investigación clínica es muy importante entrar en contacto con expertos o tutores que guíen este proceso. En la elección de este tutor es importante lo siguiente:
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#10' data-toggle='tab') 1
+								li: a(href='#11' data-toggle='tab') 2
+								li: a(href='#12' data-toggle='tab') 3
+								li: a(href='#13' data-toggle='tab') 4
+								li: a(href='#14' data-toggle='tab') 5
+								li: a(href='#15' data-toggle='tab') 6
+								li: a(href='#16' data-toggle='tab') 7
+								
+							+set('content')
+								div.tab-pane.fade.active.in#10
+									p Tenga tiempo para reuniones.
+								div.tab-pane.fade#11
+									p Promueva nuevas ideas. 
+								div.tab-pane.fade#12
+									p De conocimientos desde su experiencia.
+								div.tab-pane.fade#13
+									p Tenga tiempo para la investigación.
+								div.tab-pane.fade#14
+									p Abra puertas para contactos técnicos.
+								div.tab-pane.fade#15
+									p Anime la autonomía.
+								div.tab-pane.fade#16
+									p Reconozca las autorías.
+						
+						
+
+						p Con respecto a las  características que debe poseer una buena pregunta de investigación, se deben tener en cuenta las siguientes (3):
+						
+						ul
+							li Factibilidad.
+							li Interesante.
+							li Novedosa.
+							li Ética.
+							li Relevante.
+
+							
+							
+							
+						//- ---------------- 
+						//- ---------------- Accordion
+						//- ---------------- 
+						+accordion('accordion1')
+							+accordion-item('#accordion1', '#box1', 'box1', 'Factibilidad')
+								p Es necesario tener algunas consideraciones. Definir el número de participantes, establecer adecuadamente los criterios de inclusión y exclusión, consideraciones de tiempo, dinero, ampliación de estrategias o en tiempo y en especial tener en cuenta el diseño de estudio.
+								p Es importante contar con experiencia en los métodos a desarrollar, ya sea que los posea el investigador, se puedan adquirir o se puedan atraer de otras personas que se convierten en colaboradores del proyecto.
+								p Tener en cuenta los costos pues es necesario proveer el tiempo y dinero necesarios y que estén disponibles.
+								p Establecer muy bien el ámbito y en especial el alcance que se le quiere dar al proyecto.
+								
+							+accordion-item('#accordion1', '#box2', 'box2', 'Interesante')
+								p La pregunta lo deber ser para el investigador, los colegas y los financiadores.
+								
+							+accordion-item('#accordion1', '#box3', 'box3', 'Novedosa')
+								p El resolver la pregunta de investigación debe ser aporte de nuevo conocimiento.
+								
+							+accordion-item('#accordion1', '#box4', 'box4', 'Ética')
+								p La pregunta debe tener en cuenta los aspectos éticos que permitan balancear los riesgos contra los beneficios para participantes.
+								
+							+accordion-item('#accordion1', '#box5', 'box5', 'Relevante')
+								p El resolver este interrogante debe llevar a una contribución potencial al conocimiento científico, las políticas públicas, la práctica clínica y al desarrollo de nuevos estudios.
+								
+								
+								
+						p En el desarrollo de la pregunta es necesario tener en cuenta además lo siguiente:		
+						
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#17' data-toggle='tab') Escriba la pregunta
+								li: a(href='#18' data-toggle='tab') Busque ayuda. Asesorarse
+								li: a(href='#19' data-toggle='tab') Sea concreto
+								
+							+set('content')
+								div.tab-pane.fade.active.in#17
+									p Escribir aclara y muestra situaciones a resolver.
+								div.tab-pane.fade#18
+									p Escribir a autores, consultar investigadores.
+								div.tab-pane.fade#19
+									p Centrarse en una pregunta principal y si es necesario preguntas secundarias que puedan ser respondidas válidamente.
+									
+									
+					
+						//- Material modulo
+						+material-modulo('material-mod-1')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=340011&chapterid=9674', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=340011&chapterid=9676', 'enabled', '#test-mod-1')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

@@ -1,0 +1,207 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 1')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-1')
+						
+						h2 8. ¿Cómo se determina la causalidad y validez en investigación?
+						
+						p Existen muchos problemas que se deben tener en cuenta al planear un estudio clínico (17):
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#1' data-toggle='tab') 1
+								li: a(href='#2' data-toggle='tab') 2
+								li: a(href='#3' data-toggle='tab') 3
+								li: a(href='#4' data-toggle='tab') 4
+								li: a(href='#5' data-toggle='tab') 5
+								li: a(href='#6' data-toggle='tab') 6
+								li: a(href='#7' data-toggle='tab') 7
+								li: a(href='#8' data-toggle='tab') 8
+								li: a(href='#9' data-toggle='tab') 9
+								
+							+set('content')
+								div.tab-pane.fade.active.in#1
+									p Identificar claramente la pregunta a estudiar, incluyendo la variables principales a medir.
+								div.tab-pane.fade#2
+									p ¿Cuál es la relación entre los factores determinantes de 1 o varias hipótesis de evolución de una enfermedad de interés?
+									ol
+										li Un factor determinante a menudo se llama una variable de exposición y se denota con la letra E.
+										li La enfermedad (o resultado de interés) se denota D
+								div.tab-pane.fade#3
+									p En general, otras las variables distintas a la exposición y la enfermedad que se sabe que predicen la enfermedad se deben tener en cuenta. A menudo llaman a estas variables "variables de control" y denotan usando la letra C.
+								div.tab-pane.fade#4
+									p Se debe determinar como medir estas variables. Esto requiere el desarrollo y/o el uso de instrumentos para colectar la información.
+								div.tab-pane.fade#5
+									p Seleccionar el diseño de estudio apropiado y el método para colectar los participantes en el estudio.
+								div.tab-pane.fade#6
+									p La elección del diseño del estudio y plan de muestreo depende de la viabilidad y el costo, así como una variedad de características de la población en estudio y el propósito del estudio.
+								div.tab-pane.fade#7
+									p Elegir las medidas de frecuencia de la enfermedad y el efecto con base en el diseño del estudio. Una medida de la frecuencia de la enfermedad proporciona información cuantitativa acerca de cuan a menudo la enfermedad se produce en los subgrupos de interés. Una medida de efecto permite una comparación entre los subgrupos.
+								div.tab-pane.fade#8
+									p Considerar todas los posibles sesgos de un estudio. ¿Hay fallas en el diseño del estudio, los métodos de colección, o los métodos de análisis de datos que podría llevar a conclusiones falsas sobre la relación exposición-enfermedad?
+								div.tab-pane.fade#9
+									p Por último, realizar un análisis de los datos pertinentes, incluyendo la estratificación y el modelo adecuado. En el análisis de datos epidemiológicos a se toma en cuenta otros factores de riesgo conocidos previamente por los resultados de salud. El no hacer esto a menudo puede distorsionar los resultados y llevar a conclusiones incorrectas. 
+
+
+
+
+
+
+
+						
+						
+						p El propósito de la investigación es establecer la causa de las enfermedades o fenómenos en salud con el fin de intervenir en ellos. 
+						
+						p En últimas se centra en establecer causas para lo cual se vale de estrategias: 
+						
+						ul
+							li Observar: ¿Cuál es la causa de la tuberculosis, del cáncer, de la falta de apego al tratamiento?
+							li Intervenir: ¿Es la vacuna la causa de la disminución de la enfermedad? ¿Es el antibiótico la causa del mejoramiento del paciente?
+							
+							
+						p Hay diversas definiciones de causa pero podemos asumir que es un evento, condición o característica previa necesaria para que la enfermedad ocurriese en el momento que ocurrió, dado que otras condiciones no han cambiado.
+						p Esta definición obedece a la definición de causalidad establecida por Rothman, lo cual es una forma de pensar la multicausalidad, para lo cual define (18):
+						
+						ul
+							li Causa suficiente
+								ul
+									li Causa (o conjunto de causas) capaz de producir un efecto
+							li Causa necesaria
+								ul
+									li Causa fundamental, aparece el 100% de las veces
+							li Causa componente  
+								ul
+									li Causa adyuvante, contribuye al desarrollo del efecto pero no es fundamental
+									
+						
+						//- ---------------- 
+						//- ---------------- Resaltado text
+						//- ----------------			
+						div.resaltado-txt
+							h3 Características del modelo de Rothman: 
+							ul
+								li Ninguna de la causas componentes es superflua.
+								li No exige especificidad: un mismo efecto puede ser producido por distintas causas suficientes.
+								li  Una causa componente puede formar parte de más de una causa suficiente para el mismo efecto. Si una causa componente forma parte de todas las causas suficientes de un efecto se la denomina causa necesaria.
+								li Una misma causa componente puede formar parte de distintas causas suficientes de distintos efectos.
+								li Dos causas componentes de una causa suficiente se considera que tienen una interacción biológica, es decir ninguna actúa por su cuenta. El grado de interacción puede depender de otras causas componentes.
+									
+						p Dificilmente podemos encontrar una causa para una enfermedad. Incluso, puede ser difícil integrar una constelación causal.
+						
+						p Los modelos de Rothman facilitan la esquematización de un conjunto de causas	
+						
+						ul
+							li No exhaustivos (constelación causal)
+							li No direccionales (redes causales: ¿qué es causa y qué es mediación?)	
+							
+							
+						p El primer requisito para encontrar una relación causal entre dos variables es que exista una asociación de tipo estadístico o probabilístico.  Bajo esta perspectiva, si un factor se relaciona con una enfermedad ocurrirá con mayor frecuencia entre los enfermos que entre los  no enfermos. Sin embargo un factor puede ocurrir con más frecuencia en los enfermos que en los no-enfermos y NO ser una causa.
+
+						p Esto se debe a:	
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#10' data-toggle='tab') Sesgo
+								li: a(href='#11' data-toggle='tab') Confusión
+								li: a(href='#12' data-toggle='tab') Azar
+								
+							+set('content')
+								div.tab-pane.fade.active.in#10
+									p Error sistemático en la selección de los participantes. Ejemplo: solo los más sanos participan
+									p Si ocurre no hay mucho que hacer
+								div.tab-pane.fade.active.in#11
+									p El factor A co-ocurre con el factor B, pensamos que A esta asociado con la enfermedad, pero es en realidad B quien lo está
+								div.tab-pane.fade.active.in#12
+									p Posibilidad de observar un efecto solo por las características de selección de la muestra
+
+						p Una vez descartadas estas explicaciones es necesario tamizar esta asociación bajo los siguientes criterios de causalidad, clásicamente enunciados por Hill (19):
+						
+						
+						//- ---------------- 
+						//- ---------------- Accordion
+						//- ---------------- 
+						+accordion('accordion1')
+							+accordion-item('#accordion1', '#box1', 'box1', 'Relación Temporal')
+								p El inicio de la enfermedad debe ir precedido en el tiempo por la exposición al presunto Factor de riesgo.
+							+accordion-item('#accordion1', '#box2', 'box2', 'Plausibilidad Biológica')
+								p El mecanismo de acción del factor, la respuesta biológica y la propia interacción deben poder ser explicados y plausibles dentro de nuestro conocimiento de las ciencias biológicas.
+							+accordion-item('#accordion1', '#box3', 'box3', 'Concordancia')
+								p Métodos y estudios diferentes deben conducir a las mismas conclusiones. Diferentes tipos de estudios y en diferentes poblaciones, tienen que haber llegado a la misma conclusión. 
+							+accordion-item('#accordion1', '#box4', 'box4', 'Fuerza de asociación')
+								p Esta dada por la mayor predicción que tiene la presencia del factor de producir la enfermedad. Se mide por el Riesgo relativo.
+							+accordion-item('#accordion1', '#box5', 'box5', 'Relación dosis – respuesta')
+								p Cuanto mayor sea la exposición al factor y mas larga su duración, el riesgo a la enfermedad debe aumentar
+							+accordion-item('#accordion1', '#box6', 'box6', 'Especificidad')
+								p Mide la exclusividad de la relación entre las variables estudiadas, esta relación es ideal si solo existe entre dos variables: un solo factor debería estar ligado a una sola enfermedad y viceversa.
+							+accordion-item('#accordion1', '#box7', 'box7', 'Reversibilidad')
+								p Es la prueba reina de la causalidad. La cesación de la exposición debe disminuir el riesgo de presentar la enfermedad;  o la introducción de este FR en una población no expuesta en el pasado debe aumentar la incidencia de la enfermedad.
+							+accordion-item('#accordion1', '#box8', 'box8', 'Coherencia')
+								p Esta relación debe ser explicada y estar acorde a los conocimientos actuales.
+							+accordion-item('#accordion1', '#box9', 'box9', 'Analogía')
+								p Si una enfermedad se distribuye y propaga de forma similar a otra mejor conocida desde el punto de vista epidemiológico, ello puede sugerir una causa común a ambas
+						
+						p Sin embargo, de acuerdo a Rothman, si la asociación cumpliera con la mayoría de estos criterios, aún persiste incertidumbre sobre la verdadera asociación de estas dos variables. El aplicar los criterios lo que hacen, con mayor o menor fuerza, es ayudarnos a decidir sobre la pregunta fundamental –¿existe alguna otra manera de explicar estos datos observados, existe otra respuesta igual o mas probable que causa-efecto?	
+					
+						//- Material modulo
+						+material-modulo('material-mod-1')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=340011&chapterid=9682', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=340011&chapterid=9684', 'enabled', '#test-mod-1')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

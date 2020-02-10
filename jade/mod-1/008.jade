@@ -1,0 +1,176 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 1')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-1')
+						
+						h2 7. ¿Cómo se realiza la planificación de las mediciones? precisión y exactitud.
+						
+						h3 Sesgo de selección
+						
+						p El sesgo de selección es un error sistemático que resulta de (11):
+						
+						ul
+							li La forma como se seleccionan los participantes para un estudio
+							li Perdida de participantes selectiva antes del análisis de los datos
+							
+						p El sesgo de selección puede ocurrir en cualquier tipo de estudio epidemiológico:
+						
+						ul
+							li En estudio de casos y controles, la principal fuente de sesgo de selección es la forma en que casos, los controles o ambos son seleccionados y el grado en que la historia de la exposición influye en esa selección.
+							li En los estudios de cohortes y los ensayos clínicos, las principales fuentes de sesgo de selección son la pérdida-de-seguimiento, la retirada del estudio, o la falta de respuesta.
+							
+						p Para intentar detectar o evitar este sesgo se deben plantear y resolver los siguientes interrogantes:
+						
+						ul
+							li ¿Es el sesgo consecuencia de cómo se seleccionó la muestra?
+								ul 
+									li La exposición no debe influenciar la selección de casos
+							li ¿Las personas que participaron en el estudio difieren de alguna manera a las personas que eran elegibles pero no participaron?
+									
+						
+						p Este sesgo puede surgir en:
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#1' data-toggle='tab') En el diseño: 
+								li: a(href='#2' data-toggle='tab') Implementación:
+								li: a(href='#3' data-toggle='tab') Análisis: 
+								
+							+set('content')
+								div.tab-pane.fade.active.in#1
+									p Proceso de identificación de participantes, incluyendo la definición de la población muestreada
+								div.tab-pane.fade#2
+									p Rechazos o pérdidas durante el seguimiento en una cohorte
+									p Datos faltantes debido a un error de protocolo o defectos de diseño
+									ul
+										li Las personas que se niegan a participar - en qué se diferencian?
+										li Las personas que no completan todas las fases del estudio
+								div.tab-pane.fade#3
+									p Cumplimiento imperfecto del protocolo (por intención de tratar vs como el análisis de tratados) 
+									p Métodos  para imputar datos cuando se tiene los datos faltantes pueden afectar un selecto grupo o subgrupo
+										
+										
+						p Sesgo de Selección en Estudios de Casos y Controles (12)
+						
+						p La fuente principal sesgo de selección es la forma en que se seleccionan los casos, los controles o ambos y el grado en que la historia de la exposición influye en esa selección (13):
+						
+						ul
+							li Cómo se seleccionaron los casos y los controles?
+							li Se seleccionaron con los mismos criterios? 
+							li Esta relacionada de alguna manera la selección de casos y controles con su historial de exposición? 
+							li Se escogieron los casos y los controles con base ​​en el historial de la exposición?
+							
+						h3 Sesgo de Selección en Estudios de Cohortes
+
+						p Ocurre cuando la selección de los grupos expuestos y no expuestos se relaciona con que desarrollen o no la enfermedad o resultado de  interés.
+						p Las fuentes principales de sesgo de selección son la pérdida-de-seguimiento, el rechazo a continuar en el estudio, o la falta de respuesta.
+
+						h3 Sesgo de Selección en Estudios de Corte Transversal
+
+						p La fuente primaria de sesgo de selección es lo que se llama la “supervivencia selectiva”
+						
+						ul
+							li Sobrevivientes sólo se pueden incluir en los estudios transversales. 
+							li Si los casos no-expuestos tienen más probabilidades de sobrevivir más tiempo que los casos expuestos, o viceversa, las conclusiones obtenidas de un estudio de corte transversal puede ser diferente a partir de un estudio de cohorte correspondiente.
+							
+						p Ejemplos de sesgos de selección son (14):
+						
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#4' data-toggle='tab') 1 
+								li: a(href='#5' data-toggle='tab') 2
+								li: a(href='#6' data-toggle='tab') 3
+								
+							+set('content')
+								div.tab-pane.fade.active.in#4
+									p Sesgo de Berkson  (diferentes tasas de ingreso hospitalario)
+								div.tab-pane.fade#5
+									p Sesgo de Neymann o  sesgo de prevalencia-incidencia
+									ul
+										li Casos existentes vs. nuevos casos
+								div.tab-pane.fade#6
+									p Sesgo de autoselección
+									ul
+										li Sesgo de no respuesta, las tasas de rechazo, las tasas de no participación
+										li Publicidad sesgo
+										li Los participantes vs. no participantes
+										li Casos vs controles
+										li Expuestos vs no expuestos
+										li Caracterizar los no respondedores 
+										li Sesgo por retiro (Withdrawal)
+										li Sesgo por pérdidas de seguimiento
+										li Efecto del trabajador sano
+											ul
+												li Selección de la población general como grupo de comparación										
+										li Diferencial de vigilancia/diagnóstico
+											ul
+												li Población hospitalaria - Los pacientes a menudo son admitidos en el hospital en función de su estado de exposición
+						
+						
+									
+									
+					
+						//- Material modulo
+						+material-modulo('material-mod-1')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=340011&chapterid=9679', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=340011&chapterid=9681', 'enabled', '#test-mod-1')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

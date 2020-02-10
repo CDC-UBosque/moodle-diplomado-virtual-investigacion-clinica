@@ -1,0 +1,110 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 1')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-1')
+						
+						h2 5. ¿Cómo se realiza la elección de los participantes en un estudio clínico?
+						
+						p El reclutamiento de un número adecuado de participantes es fundamental para completar exitosamente un estudio clínico. En los estudios que realizan el seguimiento de los participantes hasta la fase de cierre, el reclutamiento debe completarse dentro de un período previamente estipulado para asegurar que la potencia del estudio no disminuya debido a un período de seguimiento más corto. Se deben identificar a los participantes que probablemente cumplan con todos los aspectos del protocolo del estudio; además, también es importante el reclutamiento representativo de ambos sexos, de todos los grupos raciales y de las minorías étnicas (6).
+
+						p Cada estudio clínico enfrenta el desafío de alcanzar el reclutamiento esperado dentro de un marco de tiempo y presupuesto determinados. Algunos estudios logran el reclutamiento dentro del marco de tiempo y presupuesto originales. Sin embargo, muchos deben prolongar el período de reclutamiento o incrementar el esfuerzo y el costo. Algunas de las razones principales asociadas a estos problemas de reclutamiento parecen ser la planificación inadecuada en todos los niveles del estudio clínico, la sobreestimación del reclutamiento desde una fuente particular y la falta de capacidad para implementar las estrategias de reclutamiento rápidamente si éste es lento. La experiencia ha demostrado que el manejo de la base de datos de las tasas de reclutamiento, con un monitoreo exhaustivo es esencial para el éxito de la recolección. También son fundamentales la clara identificación de las líneas de autoridad y la designación de las responsabilidades individuales en todos los niveles de la organización del estudio (7).	
+						
+						h3 5.1. Casos en los que se aplican consideraciones especiales:
+						
+						h3 Estudios aleatorizados por grupos
+						
+						p Los principios del reclutamiento en los estudios clínicos aleatorizados por grupos son los mismos que los descriptos anteriormente para los estudios clínicos aleatorizados por paciente. A continuación, se describen algunas diferencias específicas:
+						
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#1' data-toggle='tab') 1
+								li: a(href='#2' data-toggle='tab') 2
+								li: a(href='#3' data-toggle='tab') 3
+								li: a(href='#4' data-toggle='tab') 4
+								
+							+set('content')
+								div.tab-pane.fade.active.in#1
+									p Es útil identificar y realizar un relevamiento de todos los grupos elegibles antes de que comience el estudio para determinar si los grupos son suficientes para lograr la potencia estadística deseada.
+								div.tab-pane.fade#2
+									p Se deben identificar los responsables de la toma de decisiones en cada grupo.
+								div.tab-pane.fade#3
+									p Aunque se pueden incorporar nuevos grupos a medida que progresa el estudio, es común que se identifiquen todos los grupos antes de que se realice la aleatorización. Posteriormente, se realiza la aleatorización en un momento determinado.
+								div.tab-pane.fade#4
+									p Se recomienda iniciar la intervención tan pronto como sea posible después de la aleatorización para maximizar el interés y minimizar la posible pérdida de seguimiento.
+								
+								
+						h3 5.2. Estrategias de retención de pacientes en estudios clínicos.
+						
+						
+						p Después de reclutar los sujetos para el estudio clínico, se deben considerar estrategias que apunten a llevar a cabo un seguimiento adecuado. Éste es un punto crítico, especialmente en los estudios a largo plazo o en aquéllos en los que el o los resultados de interés demoran cierto tiempo en desarrollarse después del reclutamiento. Se deben registrar sistemáticamente los puntos finales primarios y secundarios, así como cualquier evento adverso que pudiese ocurrir. El seguimiento también incluye un monitoreo de cumplimiento, desviaciones del protocolo, contaminación e intervenciones conjuntas, si corresponde, de acuerdo con el diseño y los objetivos del estudio, así como la documentación de las pérdidas y los abandonos por parte de los sujetos del estudio. Esta información es importante en un estudio clínico controlado aleatorizado, ya que la interpretación de los resultados del estudio debe tener en cuenta la aceptabilidad del tratamiento y el nivel de falta de adhesión a la terapia. Además, en los estudios clínicos pragmáticos, el nivel de cumplimiento debe ser considerado como uno de los aspectos de la evaluación del tratamiento, ya que refleja el comportamiento en la práctica clínica fuera del entorno del estudio clínico. 
+
+						p Cualquiera sea el propósito del estudio, la recolección de datos sólo es posible si el personal sigue participando activamente y los sujetos desean mantener su participación a lo largo de todo el estudio. 
+
+						p Para garantizar el compromiso permanente con un estudio clínico, los investigadores deben desarrollar estrategias de retención después del reclutamiento (preferentemente en la fase de preparación del protocolo) enumerando todas las actividades que se llevarán a cabo durante el estudio para lograr estas metas, por ejemplo reuniones de colaboradores, boletines informativos, pósteres y productos publicitarios. Esto a menudo tendrá consecuencias sobre los recursos y debe ser incluido en el presupuesto.
+
+						p Existen muchas recomendaciones para administrar un seguimiento. Sin embargo, muchas de ellas no han sido evaluadas formalmente. Los investigadores deben ponderar, por un lado, los potenciales beneficios de cada componente del plan con los objetivos principales del estudio, y los recursos y la logística requerida para su ejecución por el otro (8).		
+						
+									
+									
+					
+						//- Material modulo
+						+material-modulo('material-mod-1')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=340011&chapterid=9676', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=340011&chapterid=9678', 'enabled', '#test-mod-1')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			
