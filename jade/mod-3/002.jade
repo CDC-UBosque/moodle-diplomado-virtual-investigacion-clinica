@@ -1,0 +1,72 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 3')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-3')
+						
+						
+						h2 2. Introducción.
+						
+						p A pesar del creciente número de publicaciones científicas, muchos médicos se encuentran con cada vez menos tiempo para leer lo que otros han escrito. La selección, lectura y evaluación crítica de publicaciones es, sin embargo, necesaria para mantenerse actualizado en el campo médico en el marco de la medicina basada en la evidencia (1, 2)
+
+						p Además del contenido médico de una publicación, su interpretación y evaluación también requieren la comprensión de metodología estadística.  Lamentablemente, ni siquiera en ciencia son todos los términos siempre usados correctamente. La palabra "significado" para ejemplo, se ha usado en exceso porque los resultados significativos (o positivos) son más fáciles de publicar (3, 4) 
+
+						p Uno de los objetivos de este capítulo es presentar los principios esenciales de la evaluación de publicaciones científicas. Estos principios podrán ser aplicados igualmente a estudios experimentales, clínicos y epidemiológicos. 
+									
+					
+						//- Material modulo
+						+material-modulo('material-mod-3')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=340019&chapterid=9703', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=340019&chapterid=9705', 'enabled', '#test-mod-3')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

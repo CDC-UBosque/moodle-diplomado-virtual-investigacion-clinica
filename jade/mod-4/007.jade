@@ -1,0 +1,74 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 4')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-4')
+						
+						
+						h2 7. ¿Cuáles son los fundamentos normativos a tener en cuenta para el desarrollo de las Buenas Prácticas Clínicas en Colombia?
+						
+						h3 7.1. Constitución Política de Colombia. (6)
+						
+						
+						p <b>Principios Fundamentales:</b> respeto de la dignidad humana, en el trabajo y la solidaridad de las personas que la integran y en la prevalencia del interés general.
+
+						p <b>Derechos Fundamentales:</b> libertad e igualdad, recibirán la misma protección y trato de las autoridades y gozarán de los mismos derechos, libertades y oportunidades sin ninguna discriminación por razones de sexo, raza, origen nacional o familiar, lengua, religión, opinión política o filosófica.  El Estado promoverá las condiciones para que la igualdad sea real y efectiva y adoptara medidas en favor de grupos discriminados o marginados.  El Estado protegerá especialmente a aquellas personas que, por su condición económica, física o mental, se encuentren en circunstancia de debilidad manifiesta y sancionará los abusos o maltratos que contra ellas se cometan.  Todas las personas tienen derecho a su intimidad personal y familiar y a su buen nombre, y el Estado debe respetarlos y hacerlos respetar. De igual modo, tienen derecho a conocer, actualizar y rectificar las informaciones que se hayan recogido sobre ellas en bancos de datos y en archivos de entidades públicas y privadas. 
+						p En la recolección, tratamiento y circulación de datos se respetarán la libertad y demás garantías consagradas en la Constitución. 
+									
+					
+						//- Material modulo
+						+material-modulo('material-mod-4')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=341871&chapterid=9723', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=341871&chapterid=9725', 'enabled', '#test-mod-4')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

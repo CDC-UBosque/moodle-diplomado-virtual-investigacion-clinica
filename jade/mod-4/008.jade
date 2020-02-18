@@ -1,0 +1,126 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 4')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-4')
+						
+						h3 7.2. Resolución 8430 de 1993. Por la cual se establecen las normas científicas, técnicas y administrativas para la investigación en salud. (7)
+						
+						p <b>Objetivo:</b> establecer los requisitos para el desarrollo de la actividad investigativa en salud.
+
+						p Establece que las instituciones que vayan a desarrollar investigación en humanos deben tener Comité de Ética en Investigación, Manual Interno de Procedimientos. 
+
+						p <b>Aspectos a los que debe contribuir la investigación en salud propuesta:</b> conocimiento de los procesos biológicos y sicológicos en los seres humanos, vínculos entre las causas de enfermedad, la práctica médica y la estructura social, prevención y control de los problemas de salud, conocimiento y evaluación de los efectos nocivos del ambiente en la salud, estudio de las técnicas y métodos que se recomienden o empleen para la prestación de servicios de salud, producción de insumos para la salud.
+
+						p <b>Aspectos éticos de la investigación en seres humanos:</b> enuncia los principios éticos que rigen la investigación clínica en Colombia.
+
+						p <b>Riesgo de la investigación:</b>  probabilidad de que el sujeto de investigación sufra algún daño como consecuencia inmediata o tardía del estudio. Estos se deben identificar.  Clasificación de las investigaciones dependiendo del tipo de riesgo inherente: investigación sin riesgo, investigación con riesgo mínimo, investigaciones con riesgo mayor que el mínimo.
+						
+						//- ---------------- 
+						//- ---------------- Accordion
+						//- ---------------- 
+						+accordion('accordion1')
+							+accordion-item('#accordion1', '#box1', 'box1', 'Investigación sin riesgo')
+								p Son estudios que emplean técnicas y métodos de investigación documental retrospectivos y aquellos en los que no se realiza ninguna intervención o modificación intencionada de las variables biológicas, fisiológicas, sicológicas o sociales de los individuos que participan en el estudio, entre los que se consideran: revisión de historias clínicas, entrevistas, cuestionarios y otros en los que no se le identifique ni se traten aspectos sensitivos de su conducta. 
+							+accordion-item('#accordion1', '#box2', 'box2', 'Investigación con riesgo mínimo')
+								p Son estudios prospectivos que emplean el registro de datos a través de procedimientos comunes consistentes en: exámenes físicos o sicológicos de diagnóstico o tratamientos rutinarios, entre los que se consideran: pesar al sujeto, electrocardiogramas, pruebas de agudeza auditiva, termografías, colección de excretas y secreciones externas, obtención de placenta durante el parto, recolección de líquido amniótico al romperse las membranas, obtención de saliva, dientes deciduales y dientes permanentes extraídos por indicación terapéutica, placa dental y cálculos removidos por procedimientos profilácticos no invasores, corte de pelo y uñas sin causar desfiguración, extracción de sangre por punción venosa en adultos en buen estado de salud, con frecuencia máxima de dos veces a la semana y volumen máximo de 450 ml en dos meses excepto durante el embarazo, ejercicio moderado en voluntarios sanos, pruebas sicológicas a grupos o individuos en los que no se manipulará la conducta del sujeto, investigación con medicamentos de uso común, amplio margen terapéutico y registrados en el Ministerio o su autoridad delegada, empleando las indicaciones, dosis y vías de administración establecidas y que no sean los medicamentos que se definen en el artículo 55 de la Resolución 8430 de 1993. 
+							+accordion-item('#accordion1', '#box3', 'box3', 'Investigaciones con riesgo mayor que el mínimo')
+								p Son aquellas en que las probabilidades de afectar al sujeto son significativas, entre las que se consideran: estudios radiológicos y con microondas, estudios con los medicamentos y modalidades que se definen en los títulos III y IV de la Resolución 2378 de 2008, ensayos con nuevos dispositivos, estudios que incluyen procedimientos quirúrgicos, extracción de sangre mayor al 2% del volumen circulante en neonatos, amniocentesis y otras técnicas invasoras o procedimientos mayores, los que empleen métodos aleatorios de asignación a esquemas terapéuticos y los que tengan control con placebos, entre otros.
+								
+								
+						p <b>Consentimiento Informado:</b> proceso, mediante el cual el sujeto de investigación o en su caso, su representante legal, autoriza su participación en la investigación, con pleno conocimiento de la naturaleza de los procedimientos, beneficios y riesgos a que se someterá, con la capacidad de libre elección y sin coacción alguna.
+						
+						
+						//- ---------------- 
+						//- ---------------- Accordion
+						//- ---------------- 
+						+accordion('accordion1')
+							+accordion-item('#accordion1', '#box4', 'box4', 'Validez')
+								p El documento elaborado por el Investigador Principal, revisado por el comité de ética, deberá tener nombres, direcciones y tipo de relación de testigos (2), firmas, así mismo del sujeto de investigación (o su representante legal), si este no sabe firmar se imprimirá su huella digital y en su nombre firmará una persona que el designe. El documento se elaborará por duplicado (en el caso que sea investigaciones con riesgo mínimo, el Comité de Ética en Investigación de la institución investigadora, por razones justificadas, podrá autorizar que el Consentimiento Informado se obtenga sin formularse por escrito y tratándose de investigaciones sin riesgo, podrá dispensar al investigador de la obtención del mismo). Para el caso de enfermos siquiátricos internados en una institución, además de cumplir con lo señalado en los artículos anteriores, será necesario obtener la aprobación previa de la autoridad que conozca del caso. 
+
+								p Es importante destacar que el documento Consentimiento Informado constituye el registro evidencia que se surtió el procedimiento estructurado de aplicación de consentimiento informado.
+								
+							+accordion-item('#accordion1', '#box5', 'box5', 'Contenido del consentimiento informado')
+								p Deberá presentar la siguiente información, la cual será explicada, en forma completa y clara al sujeto de investigación o, en su defecto, a su representante legal, en tal forma que puedan comprenderla:  justificación y objetivos,  procedimientos que vayan a usarse y su propósito, molestias o los riesgos esperados, beneficios que puedan obtenerse, procedimientos alternativos que pudieran ser ventajosos para el sujeto, garantía de recibir respuesta a cualquier pregunta y aclaración a cualquier duda acerca de los procedimientos, riesgos, beneficios y otros asuntos relacionados con la investigación y el tratamiento del sujeto, la libertad de retirar su consentimiento en cualquier momento y dejar de participar en el estudio sin que por ello se creen perjuicios para continuar su cuidado y tratamiento, la seguridad que no se identificará al sujeto y que se mantendrá la confidencialidad de la información relacionada con su privacidad, compromiso de proporcionarle información actualizada obtenida durante el estudio, aunque ésta pudiera afectar la voluntad del sujeto para continuar participando, la disponibilidad de tratamiento médico y la indemnización a que legalmente tendría derecho, por parte de la institución responsable de la investigación, en el caso de daños que le afecten directamente, causados por la investigación, gastos adicionales, éstos serán cubiertos por el presupuesto de la investigación o de la institución responsable de la misma. 
+
+								p Se hace referencia a los aspectos particulares en caso de investigación en comunidades, investigaciones en menores de edad o discapacitados, investigación en mujeres en edad fértil, embarazadas, durante el trabajo de parto, puerperio, lactancia y recién nacidos; de la utilización de embriones, óbitos y fetos y de la fertilización artificial, investigaciones en grupos subordinados, investigación en órganos, tejidos y sus derivados, productos y cadáveres de seres humanos, investigaciones de nuevos recursos profilácticos, de diagnóstico, terapéuticos y de rehabilitación.
+
+
+						p <b>Investigación Farmacológica:</b> actividades científicas tendientes al estudio de medicamentos y productos biológicos para uso humano: no se tenga experiencia previa en el país, que no estén contemplados en las Normas Farmacológicas (no sean distribuidos en forma comercial), medicamentos registrados y aprobados para su venta, cuando se investigue su uso con modalidades, indicaciones, dosis o vías de administración diferentes a las establecidas, incluyendo su empleo en combinaciones.
+						
+						
+						//- ---------------- 
+						//- ---------------- Accordion
+						//- ---------------- 
+						+accordion('accordion1')
+							+accordion-item('#accordion1', '#box6', 'box6', 'Comprende')
+								p Desde que se administra por primera vez al ser humano, hasta que se obtienen datos sobre su eficacia y seguridad terapéutica en grandes grupos de población. Para tal efecto, se consideran las siguientes fases: FASE I, FASE II, FASE III, FASE IV.
+								
+							+accordion-item('#accordion1', '#box7', 'box7', 'Establece los lineamientos para llevar a cabo:')
+								ul
+									li Bioseguridad de las investigaciones.
+									li Investigación con microorganismos patógenos o material biológico que pueda contenerlos.
+									li Investigación con isotopos radiactivos y dispositivos y generadores de radiaciones ionizantes y electromagnéticas.
+									li Investigación biomédica con animales.
+									li Investigación de otros nuevos recursos.
+									li Investigación que implique construcción y manejo de ácidos nucleicos recombinantes.
+
+
+									
+					
+						//- Material modulo
+						+material-modulo('material-mod-4')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=341871&chapterid=9724', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=341871&chapterid=9726', 'enabled', '#test-mod-4')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

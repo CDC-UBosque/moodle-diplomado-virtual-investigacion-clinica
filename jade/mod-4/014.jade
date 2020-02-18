@@ -1,0 +1,92 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 4')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-4')
+						
+						h3 9. Bibliografía
+						
+						ol
+							li ABC Buenas Prácticas Clínicas. Invima. Ministerio de la Protección Social. Bogotá, D.C. 2009 Disponible en:<a href="https://www.invima.gov.co/documents/20143/790879/ABCBPCultima_version.pdf" target="_blank">https://www.invima.gov.co/documents/20143/790879/ABCBPCultima_version.pdf</a>
+
+							li ICH Topic E 6 (R1) Guideline for Good Clinical Practice. EMEA European Medicines Agency July 2002
+							li CPMP/ICH/135/95.  Disponible en:  <a href="https://www.ema.europa.eu/en/documents/scientific-guideline/ich-e6-r1-guideline-good-clinical-practice_en.pdf" target="_blank">https://www.ema.europa.eu/en/documents/scientific-guideline/ich-e6-r1-guideline-good-clinical-practice_en.pdf</a>
+
+							li Osorio Lyda. Lo que todos debemos saber de las buenas prácticas clínicas. Biomédica 2015;35:274-84.
+
+							li Handbook For Good Clinical Research Practice (GCP). Guidance For Implementation. World Health       Organization 2002.  Disponible en <a href="https://www.who.int/medicines/areas/quality_safety/safety_efficacy/gcp1.pdf" target="_blank">https://www.who.int/medicines/areas/quality_safety/safety_efficacy/gcp1.pdf</a>
+							li Resolución 2378 de 2008: “Por la cual se adoptan las Buenas Prácticas Clínicas para las instituciones que conducen investigación con medicamentos en seres humanos” Disponible en: <a href="https://www.invima.gov.co/documents/20143/453029/Resoluci%C3%B3n+2378+de+2008.pdf/8d07d161-bda3-9e3a-c7ab-4a921ed1c004" target="_blank">https://www.invima.gov.co/documents/20143/453029/Resoluci%C3%B3n+2378+de+2008.pdf/8d07d161-bda3-9e3a-c7ab-4a921ed1c004</a>
+							li Constitución Política de Colombia: Gaceta Constitucional No. 116 de 20 de julio de 1991. Disponible en          <a href="http://www.secretariasenado.gov.co/senado/basedoc/constitucion_politica_1991.html" target="_blank">http://www.secretariasenado.gov.co/senado/basedoc/constitucion_politica_1991.html</a>
+							li Resolución 8430 de 1993: “Por la cual se establecen las normas científicas, técnicas y administrativas para la investigación en salud.”  Disponible en: <a href="https://www.invima.gov.co/documents/20143/453029/RESOLUCION-8430-DE-1993.pdf/622fd193-b21c-1536-8230-ef53241f8441" target="_blank">https://www.invima.gov.co/documents/20143/453029/RESOLUCION-8430-DE-1993.pdf/622fd193-b21c-1536-8230-ef53241f8441</a>
+							li Resolución 3823 de 1997: “Por la cual se crea La Comisión Asesora de Ciencia y Tecnología del Ministerio de Salud y se dictan normas para regular las actividades de desarrollo científico en el sector salud.”  Disponible en: <a href="https://www.invima.gov.co/documents/20143/453029/Resoluci%C3%B3n+3823+de+1997.pdf/726c8daf-bcab-7146-4dac-b209d7503f8b" target="_blank">https://www.invima.gov.co/documents/20143/453029/Resoluci%C3%B3n+3823+de+1997.pdf/726c8daf-bcab-7146-4dac-b209d7503f8b</a>
+							li Invima. Guía para la selección del investigador principal. 2014.
+							li Resolución 2011020764 de 2011 - Por la cual se establece el reglamento relativo al contenido y periodicidad de los reportes de eventos adversos en la fase de investigación clínica con medicamentos en humanos, de que trata el artículo 146 del Decreto 677 de 1995. Disponible en: <a href="https://www.invima.gov.co/documents/20143/453029/Resoluci%C3%B3n+2011020764+de+2011.pdf/e4d84d9e-3df4-8155-0eef-f50d81e621f4" target="_blank">https://www.invima.gov.co/documents/20143/453029/Resoluci%C3%B3n+2011020764+de+2011.pdf/e4d84d9e-3df4-8155-0eef-f50d81e621f4</a>
+							li Guía del Manual del Investigador: Documento elaborado y adaptado a partir de la revisión de la Guía ICH E6 (R1) Guía para Buenas Prácticas Clínicas. Fortalecimiento de las Autoridades Reguladoras 	Nacionales en el contexto de los Sistemas de Salud Brasilia, Brasil, 06-08 julio 2011. Disponible en <a href="https://www.paho.org/hq/dmdocuments/2011/GT-BPC-2011.pdf" target="_blank">https://www.paho.org/hq/dmdocuments/2011/GT-BPC-2011.pdf </a>
+
+							li Guía para la evaluación y seguimiento de protocolos de investigación Código: ASS-RSA-GU039 	Versión: 04 Fecha de Emisión: 05/03/2019. Disponible en: <a href="https://www.invima.gov.co/documents/20143/1208783/Gui%CC%81a+para+la+evaluacio%CC%81n+y+seguimiento+de+protocolos+de+investigacio%CC%81n+ASS-RSA-GU039v1.pdf/004a03e7-ee7d-9fe0-89af-55a43de7a37d?t=1560791107326" target="_blank">https://www.invima.gov.co/documents/20143/1208783/Gui%CC%81a+para+la+evaluacio%CC%81n+y+seguimiento+de+protocolos+de+investigacio%CC%81n+ASS-RSA-GU039v1.pdf/004a03e7-ee7d-9fe0-89af-55a43de7a37d?t=1560791107326</a>
+
+							li Guía Para La Presentación Y Evaluación De Modificaciones Al Manual Del Investigador Código: ASS-RSA -GU037 Versión: 02 Fecha de Emisión: 18/06/2019. Disponible en: <a href="https://www.invima.gov.co/documents/20143/1252100/ASS-RSA-GU037.pdf/840e2247-0077-93a1-f5a1 f24261ec690a?t=1561058438547" target="_blank">https://www.invima.gov.co/documents/20143/1252100/ASS-RSA-GU037.pdf/840e2247-0077-93a1-f5a1 f24261ec690a?t=1561058438547</a>
+							li Invima: Instituto Nacional de Vigilancia de medicamentos y Alimentos (Intrenet). Bogotá: Invima;2019 (citado 11 dic 2019). Direccionamiento estratégico. Disponible en: <a href="#" target="_blank">https://www.invima.gov.co/que-hacemos</a>
+							li Red PARF Documento Técnico No. Red Panamericana para la Armonización de la Reglamentación Farmacéutica, Washington, DC, diciembre de 2013 Biblioteca Sede OPS – Catalogación en la fuente Organización Panamericana de la Salud. Planes de Gestión de Riesgos para las Américas. Washington, D.C.: OPS, © 2013. (Red PARF Documento Técnico No.). 47 páginas. ISBN. Disponible en:  <a href="https://www.paho.org/hq/dmdocuments/2014/Consulta-planes-de-gestion-de-riesgo.pdf" target="_blank">https://www.paho.org/hq/dmdocuments/2014/Consulta-planes-de-gestion-de-riesgo.pdf</a>
+
+							li Guía Modelo de Inspección, Vigilancia y Control basado en Riesgos - IVC SOA Versión 1.0 - septiembre 2014. Unidad de Riesgos - Dirección General Bogotá, D. C. - Colombia 	Disponible en:  <a href="https://www.invima.gov.co/documents/20143/611185/Gu%C3%ADa+de+riesgos+IVC+SOA.pdf/c1468cd4-14c8-541d-0a49-19d7b3a2af1d" target="_blank">https://www.invima.gov.co/documents/20143/611185/Gu%C3%ADa+de+riesgos+IVC+SOA.pdf/c1468cd4-14c8-541d-0a49-19d7b3a2af1d</a>
+						
+						
+						
+					
+						//- Material modulo
+						+material-modulo('material-mod-4')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=341871&chapterid=9730', 'enabled', '#', 'disabled', '#test-mod-4')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

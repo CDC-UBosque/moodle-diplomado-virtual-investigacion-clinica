@@ -1,0 +1,81 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 5')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-5')
+						
+						
+						h2 6. Bibliografía
+							
+						ol
+							li Simón P. Cómo incorporar los principios de la ética para llevar a cabo una práctica clínica y una atención humanizada, 2013.
+							li Asociación Médica Mundial (AMM). Declaración de Helsinki. Principios éticos para las investigaciones médicas en seres humanos, 2013.
+							li Emanuel EJ, Grady C, Crouch R, Lie F, Miller G y Wendler D. (Eds.). The Oxford textbook of clinical research ethics. Oxford, UK: Oxford University Press, 2008.
+							li Emanuel E. ¿Qué hace que la investigación clínica sea ética? Siete requisitos éticos. En: Pellegrini A. y Macklin R. Investigación en sujetos humanos: experiencia internacional. Santiago: Organización Panamericana de la Salud, 1999, 33-46.
+							li London AJ. Responsiveness to Host Community Health Needs. En Ezekiel J, Grady C, Robert A. Crouch (Eds). The Oxford Textbook of Clinical Research Ethics. New York: Oxford University Press, 2008, pp. 737-738.
+							li Pinto B, et al. Bioética y la brecha 10/90. Revista Redbioética/UNESCO, 2014, Año 5, 2 (10): 81-93.
+							li Simonsen S. Acceptable Risk in Biomedical Research. European Perspectives. Netherlands: Springer Science+Business Media B.V., 2012.
+							li Vázquez AR, Ramírez EJ, Vázquez JA, Cota F y Gutiérrez JA.  Consentimiento informado. ¿Requisito legal o ético? Cirujano General. 2017; 39(3): 175-182.
+							li Vallely et al. How informed is consent in vulnerable populations? Experience using a continuous consent process during the MDP301 vaginal microbicide trial in Mwanza, Tanzania. BMC Medical Ethics. 2010; 11(10): 1-11.
+							li Pinto B y Gulfo R. Asentimiento y consentimiento informado en pediatría: aspectos bioéticos y jurídicos en el contexto colombiano. Revista Colombiana de Bioética. 2013; 8(1): 144-165.
+							li Hein IM, et al. Informed consent instead of assent is appropriate in children from the age of twelve: Policy implications of new findings on children’s competence to consent to clinical research. BMC Medical Ethics. 2015; 16(76): 1-7
+							li Waligora M, Dranseika V y Piasecki J. Child’s assent in research: Age threshold or personalisation? BMC Medical Ethics. 2014; 15(44): 1-7.
+												
+												
+					
+						//- Material modulo
+						+material-modulo('material-mod-5')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=342641&chapterid=9741', 'enabled', '#', 'disabled', '#test-mod-5')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

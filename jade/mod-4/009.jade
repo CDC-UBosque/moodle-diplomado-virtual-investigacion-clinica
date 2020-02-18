@@ -1,0 +1,70 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 4')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-4')
+						
+						h3 7.3. Resolución 3823 de 1997. Por la cual se crea la Comisión Asesora de Ciencia y Tecnología del Ministerio de Salud y se dictan normas para regular las actividades de desarrollo científico en el sector salud. (8)
+						
+						p Capitulo II. De la Actividad Científica y Tecnológica En Salud.
+						p Los proyectos de investigación en medicamentos serán evaluados por el instituto Nacional de Vigilancia de Medicamentos y Alimentos INVIMA, quien remitirá informe trimestral a la Dirección de Desarrollo Científico y Tecnológico, en el formato diseñado para el efecto. Igualmente, enviara copia de los resultados de dichos estudios, una vez éstos hayan concluido. 
+
+
+									
+					
+						//- Material modulo
+						+material-modulo('material-mod-4')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=341871&chapterid=9725', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=341871&chapterid=9727', 'enabled', '#test-mod-4')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

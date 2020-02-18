@@ -1,0 +1,73 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 3')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-3')
+						
+						
+						h2 3. Toma de decisiones con base en evidencia científica
+						
+						p Antes de comenzar un artículo científico, el lector debe ser claro en cuanto a sus intenciones. Para obtener información rápida sobre un tema, se le recomienda que lea una revisión reciente de algún tipo, ya sea un artículo de revisión (simple), una revisión sistemática con o sin metaanálisis. Las referencias en los artículos de revisión apuntan al lector hacia información más detallada sobre el tema en cuestión. 
+
+						p En ausencia de revisiones recientes sobre el tema, pueden consultarse bases de datos como PubMed. La lectura regular de revistas especializadas es una forma obvia de mantenerse al día. El título del artículo y el resumen ayudan al lector a decidir si el artículo merece más atención. El título le da al lector una primera impresión precisa del contenido del artículo y el resumen tiene la misma estructura básica que el artículo y representa los puntos esenciales de la publicación en gran medida de forma acortada, sin embargo, leer el resumen no sustituye la lectura crítica de todo el artículo, pero muestra si los autores han logrado resumir objetivos, métodos, resultados y conclusiones.
+
+
+						p La estructura de las publicaciones científicas es esencialmente siempre la misma. Comienzan con el título, resumen y palabras clave seguido por el texto principal, el cual se divide en: introducción, métodos, resultados y discusión, finalizando cuando sea apropiado con conclusiones y referencias (5).
+									
+					
+						//- Material modulo
+						+material-modulo('material-mod-3')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=340019&chapterid=9704', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=340019&chapterid=9706', 'enabled', '#test-mod-3')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

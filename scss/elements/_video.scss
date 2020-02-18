@@ -9,6 +9,15 @@
 		@include display-grid;
 	}
 	
+	.banner-videos{
+		margin: 2.5rem 0;
+		
+		&:first-child{
+			margin-top: 0;
+		}
+		
+	}
+	
 	#video .embed-container {
 		position:relative;
 		padding-bottom:56.25%;

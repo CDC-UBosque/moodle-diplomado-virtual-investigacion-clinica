@@ -1,0 +1,88 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 4')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-4')
+						
+						
+						h2 2. Introducción
+						
+						p En el año 1995 la OMS (Organización Mundial de la Salud), basada en reglamentaciones establecidas en algunos países, elaboró la “Guía de Buenas Prácticas Clínicas para investigaciones de productos farmacéuticos en seres humanos”, cuyo propósito fue definir estándares aplicables a nivel mundial. (1)
+						
+						p En el 2004, la OMS conformó un grupo de trabajo dedicado a estudiar en profundidad el tema de reglamentación en Buenas Prácticas Clínicas y Ética, se plantearon una serie de recomendaciones, dentro de las cuales se encuentran: 
+							
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#1' data-toggle='tab') 1
+								li: a(href='#2' data-toggle='tab') 2
+								
+							+set('content')
+								div.tab-pane.fade.active.in#1
+									p La adopción de Guías en Buenas Prácticas Clínicas para todos los estudios clínicos.
+								div.tab-pane.fade#2
+									p La exigencia de los documentos de consentimiento informado. 
+									
+						p En el 2005, los Grupos Técnicos de Trabajo delegados por los países que conforman la Red Panamericana de Armonización de la Reglamentación Farmacéutica, REDPARF, elaboraron el documento Buenas Prácticas Clínicas: Documento de las Américas. Éste fue enviado a Colombia en marzo del mismo año y a través de la Resolución 2378 De 2008 se adoptó oficialmente y con carácter obligatorio las Buenas Prácticas Clínicas para instituciones que conducen investigación con medicamentos en seres humanos en el país. (1)
+						p En este mismo sentido la Conferencia Internacional sobre Armonización de requisitos técnicos para el registro de productos farmacéuticos para uso humano (o ICH, por sus siglas en inglés), el cual  es un proyecto que reúne a las autoridades reguladoras de medicamentos en Europa, Japón y Estados Unidos de América y las farmacéuticas para discutir aspectos científicos y técnicos de registro de productos farmacéuticos, con el fin de estandarizar los procedimientos que se llevan a cabo en investigación clínica publicó el documento ICH E6 (R2) Good Clinical Practice. Su objetivo es proporcionar un estándar unificado para las regiones ICH para facilitar la aceptación mutua de los datos clínicos por parte de las autoridades reguladoras en estas jurisdicciones. (2) 
+									
+					
+						//- Material modulo
+						+material-modulo('material-mod-4')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=341871&chapterid=9718', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=341871&chapterid=9720', 'enabled', '#test-mod-4')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

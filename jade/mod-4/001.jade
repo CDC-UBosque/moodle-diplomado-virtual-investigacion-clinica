@@ -1,0 +1,89 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 4')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-4')
+						
+						h2 Buenas prácticas Clínicas en Investigación Clínica.
+										
+						h3 Tutora: Amanda Lucía Moreno Díaz
+						
+						p Química Farmacéutica Universidad Nacional de Colombia. Especialista en Gerencia de procesos y calidad. Integrante desde hace 4 años del Grupo de Investigación Clínica Dirección de Medicamentos y Productos Biológicos del Invima. Experiencia por 15 años en jefatura de servicio farmacéutico, 3 años en operadores logísticos, 
+						
+						
+						h2 1. Objetivos de aprendizaje
+							
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#1' data-toggle='tab') 1
+								li: a(href='#2' data-toggle='tab') 2
+								
+							+set('content')
+								div.tab-pane.fade.active.in#1
+									p Conocer el marco normativo que rige la investigación clínica en Colombia.
+								div.tab-pane.fade#2
+									p Identificar las responsabilidades y roles de los participantes en el proceso de investigación. 
+									
+						
+									
+					
+						//- Material modulo
+						+material-modulo('material-mod-4')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('#', 'disabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=341871&chapterid=9719', 'enabled', '#test-mod-4')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

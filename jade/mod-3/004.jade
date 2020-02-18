@@ -1,0 +1,212 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 3')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-3')
+						
+						h2 4. Estructura del artículo
+						
+						
+						//- ---------------- 
+						//- ---------------- Accordion
+						//- ---------------- 
+						+accordion('accordion1')
+							+accordion-item('#accordion1', '#box1', 'box1', '4.1. Introducción')
+						
+								p La introducción se propone para familiarizar al lector con el objeto de la investigación. El estado actual del conocimiento debe presentarse con referencia a la literatura reciente y la necesidad del estudio debe ser claramente establecida. Los hallazgos de los estudios citados en la revisión de la bibliografía deben ser dados en detalle. Frases inexactas tales como "hallazgos inconsistentes" o "algo mejores" se deben evitar. 
+
+								p En general, el texto debe dar la impresión de que el autor ha leído los artículos citados. En caso de duda, se recomienda al lector consultar estas publicaciones él mismo. Una buena publicación respalda sus declaraciones centrales con referencias a la literatura. 
+
+								p Idealmente, esta sección debería progresar desde lo general a lo específico. La introducción explica claramente la pregunta que el estudio pretende responder y por qué el diseño elegido es apropiado para este fin.
+								
+								
+								
+							+accordion-item('#accordion1', '#box2', 'box2', '4.2. Métodos')
+								
+								p La descripción de los procedimientos metodológicos debe dar al lector "recetas" que se pueden seguir para repetir el estudio en las mismas condiciones. Aquí se encuentran los datos esenciales que permiten evaluar la validez del estudio (6). La sección de métodos se puede dividir en subsecciones con sus propios títulos; por ejemplo, se pueden describir técnicas de laboratorio por separado de los métodos estadísticos. 
+
+								p La sección de métodos debe describir todas las etapas de planificación, la composición de la muestra de estudio (por ejemplo, pacientes, animales, líneas celulares), la ejecución del estudio, y los métodos estadísticos: ¿fue un protocolo de estudio escrito antes de comenzar el estudio?, ¿fue la investigación precedida por un estudio piloto?, ¿son la ubicación y el período del estudio especificados?.
+
+								p Debe señalarse en esta sección que el estudio se llevó a cabo con la aprobación del correspondiente Comité de Ética. 
+
+								p El elemento más importante de la investigación científica es el diseño del estudio. De hecho, si el diseño es inaceptable, entonces también lo es el artículo, independientemente de cómo se analizaron los datos (7).
+
+								p La elección del diseño del estudio debe explicarse y debe ser representado en términos claros. Debe tener en cuenta que, si no se presentan aspectos importantes de la metodología o no se describen, se aconseja al lector ser precavido. Si, por ejemplo, el método de aleatorización no se especifica, como suele ser el caso, no se debe suponer y aceptar que la aleatorización tuvo lugar (7). Los métodos estadísticos deben describirse teniendo en cuenta parámetros y procedimientos estadísticos, con referencias a la literatura especializada. 
+
+								p En el cuadro No 1, se plantean las preguntas que pueden realizarse cuando se lee la metodología: (8)
+
+								p Cuadro No 1. Preguntas para evaluar la metodología. 
+								
+								//- ---------------- 
+								//- ---------------- Tabs
+								//- ---------------- 
+								+tabs-containers
+									+set('titles')
+										li.active: a(href='#1' data-toggle='tab') 1
+										li: a(href='#2' data-toggle='tab') 2
+										li: a(href='#3' data-toggle='tab') 3
+										li: a(href='#4' data-toggle='tab') 4
+										li: a(href='#5' data-toggle='tab') 5
+										li: a(href='#6' data-toggle='tab') 6
+										
+									+set('content')
+										div.tab-pane.fade.active.in#1
+											p ¿El diseño del estudio es adecuado para cumplir con los objetivos planteados? Recuerde que las investigaciones se pueden dividir en estudios de intervención, estudios de cohortes, estudios de casos y controles, estudios transversales y estudios ecológicos.
+										div.tab-pane.fade#2
+											p ¿Se establece si el estudio es de naturaleza confirmatoria, exploratoria o descriptiva?
+										div.tab-pane.fade#3
+											p ¿El punto final del estudio está definido con precisión?
+										div.tab-pane.fade#4
+											p ¿Qué medida estadística se emplea para caracterizar el punto final?
+										div.tab-pane.fade#5
+											p ¿Los estudios epidemiológicos, por ejemplo, dan la incidencia (tasa de nuevos casos), prevalencia (número actual de casos), mortalidad (proporción de población que muere de la enfermedad en cuestión), letalidad (proporción de aquellos con la enfermedad que fallece) o la tasa de ingreso hospitalario (proporción de la población ingresada en el hospital a causa de la enfermedad)?
+										div.tab-pane.fade#6
+											p ¿Son el área geográfica, la población, el período de estudio (incluida la duración de seguimiento), y los intervalos entre investigaciones descritos en detalle?
+											
+
+								p El diseño y la implementación del estudio son descritos por Altman (1991), Trampisch y Windeler (2000) (7, 9).  En estudios experimentales, la representación precisa del diseño y la ejecución son vitales. La precisión de un método debe ser declarada, es decir, su fiabilidad (precisión) y validez (corrección). El poder explicativo de los resultados de un estudio clínico se mejora mediante la inclusión de un grupo control (controles activos, históricos o placebo) y por la asignación aleatoria de pacientes a los diferentes brazos del estudio. La calidad también se puede aumentar cegando a los investigadores, lo que garantiza un tratamiento y observación idénticos para todos los participantes del estudio. 
+
+								p El estudio debe, por regla general, incluir una estimación de lo requerido en número de pacientes (planificación) antes del inicio del estudio. 
+
+								p Las recomendaciones internacionales especialmente formuladas para la notificación de ensayos clínicos aleatorizados y controlados se presentan en los estudios más recientes y como ejemplo de ello tenemos la versión de la Declaración CONSORT (Consolidada Normas de informes de ensayos) (8).  
+
+								p Una característica de una buena publicación es una precisa cuenta de criterios de inclusión y exclusión, qué tan alto fue la tasa de respuesta (80% es bueno, 30% significa que perdió poder para detectar diferencias), y qué tan alta fue la tasa de pérdida durante el seguimiento. Para determinar si los participantes difieren de los no participantes, se deben incluir datos sobre estos últimos. Los criterios de selección y las tarifas de pérdidas durante el seguimiento permiten conclusiones sobre si la muestra de estudio es representativa de la población objetivo.
+
+								p Una buena descripción del estudio incluye información sobre los sujetos perdidos particularmente en estudios de casos y controles, pero también en estudios clínicos no aleatorizados y estudios de cohortes, por ejemplo, en el estudio de casos y controles la elección de los controles debe describirse con precisión, ya que se debe estar seguro de que el grupo de control es comparable con el grupo de casos y no muestre discrepancias sistemáticas que puedan conducir a interpretaciones erróneas (confusión) u otros problemas (8).
+
+								p Adicionalmente, se debe explicar, ¿cómo se realizaron las mediciones?, ¿cuáles fueron los instrumentos y técnicas de medición?, uso de dispositivos, escala de valores medidos, datos de laboratorio y el período de tiempo, descrito con suficiente detalle. También debe mencionar si las mediciones en condiciones estandarizadas, y por lo tanto comparables, en todos los pacientes.  
+
+								p Los detalles de los procedimientos de medición son importantes para la evaluación de la precisión (fiabilidad, validez). El lector debe ver con qué tipo de escala se miden las variables (por ejemplo, escala nominal, como sexo o escala ordinal como estadio de cáncer, o escala de razón como peso corporal); porque el tipo de escala determina qué tipo de análisis es posible. 
+
+								p El análisis descriptivo emplea valores de medidas descriptivas y gráficos y/o tablas, mientras que en el análisis estadístico la elección de prueba debe tenerse en cuenta. La interpretación y el poder de los resultados también están influenciados por tipo de escala de medición, por ejemplo, los datos en una escala ordinal no pueden ser descritos usando medidas de tendencia central y dispersión (media, desviación estándar). También debe describirse cuál fue el porcentaje de poder con el que se calculó la muestra, así como la confianza y el error usados para dicho cálculo.  			
+								
+								
+							+accordion-item('#accordion1', '#box3', 'box3', '4.3. Resultados')
+								p En esta sección, los resultados deben presentarse clara y objetivamente, es decir, sin interpretación. La interpretación de los resultados pertenece a la discusión. La sección de resultados debe abordar directamente los objetivos del estudio y se presentará de forma bien estructurada, de manera comprensible y consistente. 
+
+								p Primero, el resultado debe formularse de manera descriptiva, indicando estadísticas tales como números de casos, valores medios, medidas de dispersión e intervalos de confianza. Esta sección debe incluir una descripción completa de la población de estudio. Una segunda subsección analítica describe la relación entre características, la estimación del efecto de un factor de riesgo, por ejemplo, el comportamiento de fumar, en una variable dependiente como cáncer de pulmón, y puede incluir el cálculo de modelos estadísticos apropiados e información sobre significancia estadística en la forma de valores p, descripción completa de los datos y los detalles sobre intervalos de confianza y tamaños de efectos son recomendables (10, 11). Se deben usar tablas y figuras para mejorar la claridad, y los datos deben ser auto explicativos.
+								
+							+accordion-item('#accordion1', '#box4', 'box4', '4.4. Discusión')
+								p En esta sección, el autor debe discutir sus resultados franca y abiertamente, independientemente del tipo de estudio. La discusión tiene como objetivo la comparación de los hallazgos con el estatus quo, respondiendo las siguientes preguntas (ver cuadro No 2):
+
+								p Cuadro No 2. Preguntas para evaluar la discusión.
+								
+								//- ---------------- 
+								//- ---------------- Tabs
+								//- ---------------- 
+								+tabs-containers
+									+set('titles')
+										li.active: a(href='#7' data-toggle='tab') 1
+										li: a(href='#8' data-toggle='tab') 2
+										li: a(href='#9' data-toggle='tab') 3
+										li: a(href='#10' data-toggle='tab') 4
+										li: a(href='#11' data-toggle='tab') 5
+										li: a(href='#12' data-toggle='tab') 6
+										li: a(href='#13' data-toggle='tab') 7
+										li: a(href='#14' data-toggle='tab') 8
+										
+									+set('content')
+										div.tab-pane.fade.active.in#7
+											p ¿Cómo el estudio se ha agregado al cuerpo de conocimiento sobre el tema dado? 
+										div.tab-pane.fade#8
+											p ¿Qué conclusiones se pueden sacar? 
+										div.tab-pane.fade#9
+											p ¿Los hallazgos del estudio conducirán al autor a reconsiderar o cambiar su propio comportamiento profesional, modificar un tratamiento o tener en cuenta factores previamente no considerados? 
+										div.tab-pane.fade#10
+											p ¿Los hallazgos sugieren la necesidad de realizar investigaciones más profundas? 
+										div.tab-pane.fade#11
+											p ¿El estudio plantea nuevas preguntas sin respuesta? 
+										div.tab-pane.fade#12
+											p ¿Cuáles son las implicaciones de los resultados para la ciencia, la rutina clínica, la atención al paciente y la práctica médica? 
+										div.tab-pane.fade#13
+											p ¿Los hallazgos concuerdan con la mayoría de los estudios anteriores? Si no, ¿cómo podría explicarse? 
+										div.tab-pane.fade#14
+											p ¿Los resultados parecen plausibles biológicamente o desde el punto de vista médico?
+											
+
+								p Una buena discusión debe contener el análisis crítico de las limitaciones del estudio. Por ejemplo, debe contener las fuentes de errores aleatorios o sesgos, y cómo han afectado los resultados.  Incluso con una cuidadosa planificación y ejecución del estudio, los sesgos no pueden ser enteramente excluidos, puede haber, por ejemplo, una inesperada alta tasa de pérdida durante el seguimiento (a través de pacientes que se niegan a continuar en el estudio). 
+
+								p Al comparar grupos, se debe establecer si existe alguna diferencia intergrupal en la composición de los participantes perdidos durante el seguimiento. Tal discrepancia podría ocultar una verdadera diferencia entre los grupos, ejemplo de ello, en un estudio de casos y controles con respecto a un factor de riesgo, se puede encontrar una diferencia como resultado de la selección de la población de estudio. 
+
+								p La discusión debe llamar la atención sobre tales diferencias y describir los pacientes que no completan el estudio. La posible distorsión de los resultados del estudio por valores faltantes o por pérdidas de sujetos incluidos al inicio también debe ser discutido. En estudios de casos y controles, una fuente típica de error es la determinación retrospectiva de la exposición de los participantes del estudio. Sus recuerdos pueden no ser exactos (sesgo de memoria). Otra fuente frecuente de error en estudios de cohortes puede ocurrir cuando dos factores de riesgo estrechamente relacionados están asociados con la variable dependiente. Los errores de este tipo pueden corregirse y revelarse mediante ajustes para el factor de confusión. Por ejemplo, el hecho de que los fumadores beben más café que el promedio podría llevar a la suposición errónea de que beber café causa cáncer de pulmón. Si los factores de confusión no se mencionan en la publicación, el lector crítico debería preguntarse si los resultados podrían ser invalidados por este fenómeno o por los sesgos del estudio. Si no se incluyeron posibles factores de confusión en el análisis, las posibles fuentes de sesgo al menos deberían ser debatidas críticamente (12).
+
+								p Los resultados que no alcanzan significación estadística deben publicarse. Desafortunadamente, la mayor importancia es todavía a menudo relacionada con los resultados significativos, por lo que es más probable que se publiquen que los hallazgos no significativos.  Este sesgo de publicación conduce a distorsiones sistemáticas en el cuerpo del conocimiento científico. 
+
+								p No debe olvidarse que la significación estadística, es decir, la minimización de la probabilidad de un resultado por azar, no es lo mismo que relevancia clínica. Con una muestra suficiente, incluso las diferencias minúsculas pueden convertirse estadísticamente significativas, pero los resultados no son automáticamente relevantes (8, 13). Esto es cierto tanto para los estudios epidemiológicos, desde la perspectiva de la salud pública u observacionales como para estudios desde la perspectiva clínica. En ambos casos, se requiere una evaluación económica cuidadosa para decidir si modificar o retener las prácticas existentes. 
+
+								p Al nivel de población debe preguntarse con qué frecuencia ocurre realmente el factor de riesgo investigado y si un ligero aumento del riesgo justifica la amplia intervención en salud pública. Desde el punto de vista clínico, debe ser cuidadosamente considerado si, por ejemplo, la mayor eficacia de una nueva preparación justifica el aumento de costos y posiblemente una mayor incidencia de efectos secundarios. 
+								
+								
+							+accordion-item('#accordion1', '#box5', 'box5', '4.5. Conclusiones')
+								p Los autores deben concentrarse en las conclusiones más importantes. Una pregunta crucial es si las interpretaciones siguen lógicamente a los resultados. Se deben evitar conclusiones que no estén respaldadas por los propios datos ni por los hallazgos de otros. Es incorrecto referirse a un análisis exploratorio de datos como prueba. Incluso en estudios confirmatorios, los propios resultados deberían, en aras de consistencia, siempre ser considerados a la luz de otros hallazgos de los investigadores. 
+
+								p Al evaluar los resultados y formular las conclusiones, las debilidades del estudio deben ser consideradas debidamente. El estudio puede alcanzar objetividad solo si la posibilidad de error o azar se admiten en los resultados, es decir, la inclusión de resultados no significativos. "No significativo" no debe confundirse con "sin asociación". Todos los resultados significativos deben analizarse desde el punto de vista de la plausibilidad biológica y médica. Las llamadas escalas de niveles de evidencia, como se usan en algunas de las revistas americanas, pueden ayudar al lector a decidir qué de su práctica debería verse afectada por el contenido de una publicación dada (14). 
+
+								p Hasta que todas las revistas ofrezcan recomendaciones de este tipo, el médico individual debe tener la capacidad de leer textos científicos de manera crítica y decidir si el diagnóstico y la práctica terapéutica se basan en información médica actualizada conocimiento.
+								
+								
+							+accordion-item('#accordion1', '#box6', 'box6', '4.6. Referencias')
+								p Las referencias deben presentarse en el estilo estándar de la revista. La lista de referencia debe incluir todas las fuentes citadas en el texto, tablas y figuras del artículo. Es importante asegurarse de que las referencias estén actualizadas, en orden para dejar en claro si la publicación incorpora nuevos conocimientos. Las referencias citadas deberían ayudar al lector para explorar el tema más a fondo.
+								
+							+accordion-item('#accordion1', '#box7', 'box7', '4.7. Agradecimientos y declaración de conflicto de intereses')
+								p Esta importante sección debe proporcionar información sobre cualquier patrocinador del estudio. Cualquier posible conflicto de intereses, financiero o de otro tipo, debe revelarse en su totalidad (15). 
+						
+						
+									
+					
+						//- Material modulo
+						+material-modulo('material-mod-3')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=340019&chapterid=9705', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=340019&chapterid=9707', 'enabled', '#test-mod-3')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

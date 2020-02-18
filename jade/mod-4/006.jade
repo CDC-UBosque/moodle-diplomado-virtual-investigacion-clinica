@@ -1,0 +1,102 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 4')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-4')
+						
+						
+						h2 6. ¿A qué autoridad en Colombia le corresponde verificar el cumplimiento de las Buenas Prácticas Clínicas?
+						
+						p El Instituto Nacional de Vigilancia de Medicamentos y Alimentos - INVIMA, como Agencia Sanitaria Nacional, tiene la responsabilidad de ser el garante en el cumplimiento de la implementación y seguimiento de las Buenas Prácticas Clínicas.  
+						p A lo largo del presente capitulo, se realizará un abordaje acerca de los estándares que rigen la implementación de las Buenas Prácticas Clínicas en Colombia, atendiendo a los lineamientos normativos establecidos en la Resolución 2378 de 2008. (5)
+						p En este sentido y atendiendo el cumplimiento de las Buenas Prácticas Clínicas, se aborda desde el punto de vista regulatorio en tres aspectos principales:
+						
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#1' data-toggle='tab') 1
+								li: a(href='#2' data-toggle='tab') 2
+								li: a(href='#3' data-toggle='tab') 3
+								
+							+set('content')
+								div.tab-pane.fade.active.in#1
+									p Verificar el cumplimiento de las Buenas Prácticas Clínicas (BPC) en las instituciones interesadas en desarrollar estudios clínicos (EC) con medicamentos, para lo cual se expide un certificado.
+								div.tab-pane.fade#2
+									p Evaluar y conceptuar sobre los estudios clínicos con medicamentos en seres humanos a realizarse en Colombia, así como los documentos relacionados con el desarrollo de los mismos.
+								div.tab-pane.fade#3
+									p Realizar seguimiento a las instituciones que conducen investigación clínica con medicamentos.
+									
+									
+									
+						//- ---------------- 
+						//- ---------------- Resaltado text
+						//- ----------------			
+						div.resaltado-txt
+							p A través de la verificación de los lineamientos anteriormente mencionados se busca garantizar lo siguiente:
+							ol
+								li La seguridad del sujeto de investigación.
+								li La validez de los datos arrojados en la investigación clínica. 
+
+									
+						p Los lineamientos normativos establecidos con el fin de asegurar que el proceso de investigación clínica con medicamentos en seres humanos se lleve a cabo de acuerdo a los estándares internacionales y los principios y derechos fundamentales establecidos en la Constitución Política de Colombia, se encuentran definidos en las resoluciones 8430 de 1993, por la cual se establecen las normas científicas, técnicas y administrativas para la investigación en salud y 2378 de 2008, por la cual se adoptan las Buenas Prácticas Clínicas para las instituciones que conducen  investigación con medicamentos en seres humanos. 			
+									
+					
+						//- Material modulo
+						+material-modulo('material-mod-4')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=341871&chapterid=9722', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=341871&chapterid=9724', 'enabled', '#test-mod-4')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

@@ -1,0 +1,75 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 5')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-5')
+						
+						
+						h2 Recomendaciones clave:
+							
+						ol
+							li Los requisitos éticos para la investigación son: valor social de la investigación, validez científica del estudio, selección equitativa de los participantes, relación favorable entre riesgos y beneficios, consentimiento informado, respeto por los derechos de los participantes, investigación participativa basada en la comunidad.
+							li La investigación en poblaciones en condiciones de vulnerabilidad sólo se justifica si la investigación beneficia tal comunidad.
+							li Existen tres elementos que son de capital importancia para la investigación en nuestros países: priorización de las líneas de investigación, construcción de capacidad local en investigación y la superación de un modelo de investigación extractiva hacia un modelo de investigación basado en la comunidad.
+							li Es importante recordar que el CI no es solo un documento de trámite; constituye un proceso gradual de intercambio de información cuyo objetivo, en el contexto de la investigación, es promover la participación informada de los voluntarios, quienes deben comprender las particularidades de un protocolo experimental, la diferencia entre un ensayo clínico y una terapia comprobada, así como sus derechos y deberes en el curso de la investigación
+							li En el caso de niños, niñas y adolescentes se sugiere establecer un rango de edad escolar (entre 5 y 7 años) asociado a un proceso personalizado de evaluación de la competencia para participar en el proceso de toma de decisiones, el cual contempla la posibilidad de que niños por debajo de dicho rango puedan participar en el proceso. 
+							li El asentimiento en niños en edad escolar debe contemplar factores como: la complejidad del estudio, las experiencias previas del niño con respecto a su condición actual y otros factores que puedan influenciar su habilidad para asentir.
+												
+												
+					
+						//- Material modulo
+						+material-modulo('material-mod-5')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=342641&chapterid=9740', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=342641&chapterid=9742', 'enabled', '#test-mod-5')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

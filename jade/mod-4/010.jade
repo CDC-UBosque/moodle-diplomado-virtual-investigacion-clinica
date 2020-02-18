@@ -1,0 +1,224 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 4')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-4')
+						
+						h3 7.4. Resolución 2378 de 2008. Por la cual se adoptan las Buenas Prácticas Clínicas para las instituciones que conducen investigación con medicamentos en seres humanos. (5)
+						
+						p <b>Considera:</b> que la investigación que se realice en seres humanos se debe realizar por profesionales con conocimiento y experiencia para cuidar la integridad del ser humano bajo la responsabilidad de una entidad de salud, supervisada por las autoridades competentes, siempre y cuando cuenten con los recursos humanos y materiales necesarios que garanticen el bienestar del sujeto de investigación.
+						p Que las investigaciones clínicas con medicamentos en seres humanos tienen la probabilidad de generar efectos no deseados en los participantes y, la persona “sujeto” de investigación puede sufrir algún daño, como consecuencia inmediata o tardía del estudio.
+						p Que son derechos fundamentales de los ciudadanos la vida, la integridad física y la salud.
+						p Que en toda investigación en la que el ser humano sea sujeto de estudio, deberá prevalecer el criterio del respeto a su dignidad y la protección de sus derechos y su bienestar.
+						p Que las investigaciones de medicamentos en farmacología clínica comprenden la secuencia de estudios que se llevan a cabo, desde que se administran por primera vez al ser humano, hasta que se obtienen datos sobre su eficacia y seguridad terapéutica en grandes grupos de población.
+
+						p <b>Establece:</b> responsabilidad de las Buenas Prácticas Clínicas en cabeza del área de investigación de la institución investigadora, o quien haga sus veces.
+						
+						//- ---------------- 
+						//- ---------------- Resaltado text
+						//- ----------------			
+						div.resaltado-txt
+							h4 CERTIFICADO DE BUENAS PRÁCTICAS CLÍNICAS
+							p Lo otorga Invima a través de un certificado, previa verificación. Validez 5 años.
+
+						
+						p Todo proyecto de investigación con medicamentos en seres humanos deberá registrarse ante el Invima, este ente regulador verificará a potestad el cumplimiento de las Buenas Prácticas Clínicas (BPC), las instituciones que conduzcan investigaciones con seres humanos deben contar con el certificado de habilitación en salud.
+						
+						
+						//- ---------------- 
+						//- ---------------- Resaltado text
+						//- ----------------			
+						div.resaltado-txt
+							p No se podrán iniciar proyectos de investigación clínica con medicamentos en seres humanos, que no estén aprobados por Invima, o que no hayan obtenido visto bueno previo por parte de dicha Institución.
+
+
+						p El Invima puede interrumpir en cualquier momento la investigación cuando: haya alteración de las condiciones de autorización, incumplimiento de las BPC, en casos de protección de sujetos, defensa de la salud pública, adicionalmente, los resultados de la investigación deben ser reportados a Invima.
+						p Las Instituciones investigadoras deben contar con CEI (Comité de Ética en Investigación), el cual debe aprobar toda investigación con seres humanos, si no se dispone de CEI se acepta el de otra institución que este acreditada en BPC.
+						p A través de la Resolución 2378 se establecen los criterios que deben cumplir las instituciones que realicen investigación clínica y que serán objeto de evaluación en el proceso de certificación de Buenas Prácticas Clínicas. Es importante señalar que estos deben estar soportados dentro de un sistema de gestión de calidad, con procedimientos estandarizados, documentados y con auditorias de proceso que garanticen la conformidad de este con los estándares exigidos en la normatividad. 
+						p En la figura No 2 se mencionan los aspectos que se evalúan en el proceso de certificación, renovación y seguimiento de la certificación de Buenas Prácticas Clínicas:
+						
+						
+						//- ---------------- 
+						//- ---------------- Image / video + caption
+						//- ---------------- 		
+						+image-caption('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-investigacion-clinica-amgen/images/mod-4/002.jpg', 'example-1', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-investigacion-clinica-amgen/images/mod-4/002.jpg', 'Figura No 2. Aspectos que se evalúan en el proceso de certificación, renovación y seguimiento de la certificación de BPC.')
+							span Figura No 2. Aspectos que se evalúan en el proceso de certificación, renovación y seguimiento de la certificación de BPC.
+						
+						
+						p En la conducción de estudios clínicos, es importante conocer las responsabilidades de los diferentes actores. En las tablas No 2 y No 3, se mencionan las responsabilidades del investigador y del patrocinador.			
+						
+						
+						//- ---------------- 
+						//- ---------------- Tables
+						//- ----------------
+						+tables-containers('Tabla No 2. Responsabilidades del Investigador. (5)')
+							+set('thead')
+								tr
+									th RESPONSABILIDADES DEL INVESTIGADOR
+							+set('tr')
+								tr
+									td Estandarización de procesos. 
+								tr
+									td Entrenamiento, actualización, información y apoyo personal de estudio en el centro de investigación. 
+								tr
+									td Cumplimiento de la normatividad y las regulaciones éticas.
+								tr
+									td Adherencia al protocolo de investigación durante la conducción del estudio.
+								tr
+									td Manejo adecuado de la información / confidencialidad.
+								tr
+									td Manejo y reporte de eventos adversos.
+								tr
+									td Supervisión en la toma y procesamiento de muestras y especímenes biológicos.
+								tr
+									td Manejo del medicamento de investigación.
+								tr
+									td Solicitud de consentimiento informado.
+								tr
+									td Inclusión y seguimiento de los participantes en el estudio.
+								tr
+									td Comunicación con ente regulador, comité de ética y patrocinador.
+								tr
+									td Enfoque integral del paciente.
+								tr
+									td Divulgación de los resultados de la investigación.  
+								tr
+									td Manejo de documentación.
+						
+						
+						p Es fundamental tener claro, los lineamientos para la selección del investigador principal y los criterios para establecer sus funciones y responsabilidades, los cuales están descritos en la Guía para la Selección del Investigador Principal de Invima y se mencionan a continuación: (9)
+						
+						
+						//- ---------------- 
+						//- ---------------- Resaltado text
+						//- ----------------			
+						div.resaltado-txt
+							h4 CRITERIOS PARA LA SELECCIÓN DEL INVESTIGADOR PRINCIPAL 
+							p Para la conducción de un estudio clínico el investigador principal debe cumplir las siguientes características: 
+							
+							
+							p <b>Formación Académica:</b> profesional de la salud con especialización en el área específica del protocolo de investigación. En caso que su formación académica fuese en el exterior se debe presentar la convalidación del título obtenido emitido por la autoridad competente. 
+							p.small Nota: Se debe contar con la verificación del título por parte de los evaluadores (Comité de Ética). 
+							p <b>Experiencia:</b> debe tener experiencia certificada de al menos tres años en el ejercicio profesional como especialista en el manejo de las enfermedades relacionadas con el tema de investigación, así mismo debe contar con dos años de experiencia certificada en investigación y producción científica en el área de la investigación propuesta.  
+							p <b>Entrenamiento:</b> debe contar con certificaciones de capacitación en Buenas Prácticas Clínicas (normatividad nacional e internacional) con una vigencia máxima de 2 años, cursos adicionales referentes a investigación clínica o en conducción de estudios clínicos.
+							
+						
+						
+						
+						//- ---------------- 
+						//- ---------------- Tables
+						//- ----------------
+						+tables-containers('Tabla No 3. Responsabilidades del Patrocinador. (5)')
+							+set('thead')
+								tr
+									th RESPONSABILIDADES DEL PATROCINADOR
+							+set('tr')
+								tr
+									td Protección y seguridad de los participantes (sistema de monitorización de seguridad, reporte de eventos adversos a nivel mundial).
+								tr
+									td Calidad y control de calidad durante la investigación (personal idóneo, procedimientos estandarizados, cumplimiento BPC, manejo de datos para asegurar confidencialidad). 
+								tr
+									td Acuerdos escritos con el investigador o institución.
+								tr
+									td Aprobaciones por parte de Invima.
+								tr
+									td Control y distribución del producto de investigación.
+								tr
+									td Asegurarse que el personal del estudio conoce el producto en investigación.
+								tr
+									td Disponibilidad de datos de seguridad y eficacia de estudios preclínicos y clínicos previos. 
+								tr
+									td Presupuesto del estudio.  
+								tr
+									td Confidencialidad de los participantes.
+								tr
+									td Condiciones adecuadas para archivar documentos por lo menos por 2 años.
+								tr
+									td Sistema de monitoreo continuo de los protocolos, reporte de hallazgos por escrito.
+
+						
+						
+						
+						p Otro actor fundamental es el Comité de Ética en Investigación Clínica (CEI), el cual es una organización independiente integrada por miembros médicos, científicos y no científicos cuya responsabilidad es garantizar la protección de los derechos, seguridad y bienestar de los seres humanos involucrados en un estudio por medio de, la aprobación y revisión constante del proyecto de estudio y enmiendas de la documentación, el consentimiento informado de los sujetos del estudio y demás documentos de soporte.
+
+						p A continuación, se mencionarán algunos puntos clave de los CEI.
+						
+						
+						//- ---------------- 
+						//- ---------------- Accordion
+						//- ---------------- 
+						+accordion('accordion1')
+							+accordion-item('#accordion1', '#box1', 'box1', 'Responsabilidades')
+								p Salvaguardar los derechos de los participantes de la investigación, evaluar y aprobar o no antes del inicio las investigaciones propuestas, obtener y mantener la documentación requerida da cada estudio, evaluar la competencia de los investigadores, evaluación periódica del desarrollo de los estudios clínicos. 
+								
+							+accordion-item('#accordion1', '#box2', 'box2', 'Composición')
+								p Al menos 5 miembros, balance de sexo y edad, multidisciplinario, al menos 1 miembro no científico, al menos un médico, un miembro independiente de la institución. Se sigue la norma en lo que hace referencia a la participación de consultores. 
+								p Deben estar explícitos los requisitos y procesos para selección de miembros (quienes seleccionan, procedimiento utilizado, evaluación de posibles conflictos de interés, inhabilidades).  Condiciones de nombramiento de los miembros del comité (aceptación para hacer publica alguna parte de su información personal, información referente a pagos y reembolsos recibidos por su trabajo como miembros del comité, acuerdo de confidencialidad por escrito). 
+								p Términos de la membresía (duración, renovación, descalificación, renuncia, sustitución, nombre del cargo, responsabilidades de acuerdo al cargo), requisitos sobre quórum, especificaciones claras sobre la participación de consultores, entrenamiento y capacitación de los miembros del comité. 
+
+							+accordion-item('#accordion1', '#box3', 'box3', 'Procedimientos del CEI')
+								p En los cuales deben estar explícitos los siguientes aspectos:
+								
+								ul
+									li Autoridad bajo la cual está establecido, tipo de subordinación, metodología de evaluación de propuestas, requisitos para la toma de decisiones. 
+									li Requisitos y mecanismos para realizar aprobación expedita/extraordinaria, documentos que deben presentar los investigadores para la evaluación de una propuesta de investigación, el comité debe definir por escrito los aspectos que va a considerar en la evaluación de protocolo de investigación. 
+									li Notificar por escrito al investigador de las decisiones tomadas. Asegurar el éxito de las sesiones. Procedimientos para seguir el progreso de los estudios desde la aprobación hasta la terminación. 
+									li Establecer procedimientos para evitar el reclutamiento de sujetos antes de aprobar el estudio, implementación de enmiendas sin previo aviso, incumplimiento con los informes, asegurar la notificación de desviaciones, eventos adversos o reacciones, nueva información que pueda afectar la seguridad de los sujetos o la conducción del estudio. Informar las sanciones a que haya a lugar en caso de incumplimiento. Tener tablas e retención documental. 
+						
+					
+						//- Material modulo
+						+material-modulo('material-mod-4')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=341871&chapterid=9726', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=341871&chapterid=9728', 'enabled', '#test-mod-4')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

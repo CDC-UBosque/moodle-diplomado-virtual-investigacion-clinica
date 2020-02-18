@@ -1,0 +1,92 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 5')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-5')
+						
+						h2 Aspectos éticos en investigación biomédica.
+										
+						h3 Tutor: Boris Pinto
+						
+						p Médico Cirujano, especialista, magister, PhD en Bioética. Profesor investigador Departamento de Bioética Universidad El Bosque. Profesor Principal Escuela de Medicina y Ciencias de la Salud Universidad del Rosario. Profesor invitado Maestría en Derecho Médico Universidad Externado de Colombia. Asesor en Bioética ONG Paliativos sin Fronteras, País Vasco España.
+						
+						
+						h2 1. Objetivos del módulo
+							
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#1' data-toggle='tab') 1
+								li: a(href='#2' data-toggle='tab') 2
+								li: a(href='#3' data-toggle='tab') 3
+								
+							+set('content')
+								div.tab-pane.fade.active.in#1
+									p Identificar el contexto histórico y el marco de principios en ética de investigación.
+								div.tab-pane.fade#2
+									p Describir los requisitos éticos relevantes para el diseño de proyectos de investigación biomédica y para su evaluación en comités de ética en investigación.
+								div.tab-pane.fade#3
+									p Identificar el marco normativo nacional e internacional para el diseño y evaluación de proyectos de investigación biomédica.
+									
+						
+									
+					
+						//- Material modulo
+						+material-modulo('material-mod-5')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('#', 'disabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=342641&chapterid=9737', 'enabled', '#test-mod-5')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

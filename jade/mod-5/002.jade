@@ -1,0 +1,70 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 5')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-5')
+						
+						
+						h2 2. Introducción
+							
+						p La investigación biomédica de calidad demanda la articulación de rigurosos criterios técnicos que aseguren la validez científica de los estudios, al tiempo que salvaguarden la protección de los derechos de los participantes y de las comunidades en quienes se realizan. Este módulo pretende identificar y describir el marco de principios éticos relevantes, los requisitos éticos y el marco normativo en investigación, tanto a nivel nacional como internacional, con el propósito de contribuir con la calidad ética y científica de la investigación biomédica en seres humanos. 
+									
+						
+									
+					
+						//- Material modulo
+						+material-modulo('material-mod-5')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=342641&chapterid=9736', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=342641&chapterid=9738', 'enabled', '#test-mod-5')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

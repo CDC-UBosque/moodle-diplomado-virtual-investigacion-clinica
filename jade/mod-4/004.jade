@@ -1,0 +1,144 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 4')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-4')
+						
+						
+						h2 4. ¿Cuáles son los principios enmarcados en las Buenas Prácticas Clínicas?
+						
+						p Actualmente, las buenas prácticas clínicas se basan en dos documentos internacionales, uno publicado por la Organización Mundial de la Salud (OMS) , y otro publicado por la International Conference of Harmonization of Technical Requirements for Registration of Pharmaceuticals for Human Use (ICH).  (3) 
+						p En general, las guías de buenas prácticas clínicas publicadas por la OMS y la ICH son similares, se diferencian en que la OMS contempla 14 principios y la ICH, 13, ya que los principios 5 y 6 de la OMS se unieron en el principio 6. 
+						p Otra diferencia es el propósito con el cual fueron desarrollados. El documento de la OMS pretende que las guías de buenas prácticas clínicas sean referencias para los países que no cuentan con regulación en esta área, o en un estándar complementario a las regulaciones ya existentes en los países miembro de esta organización, independientemente de si los productos son desarrollados o no por compañías farmacéuticas; por su parte, el documento de la ICH tiene como propósito mejorar la calidad y eficiencia del proceso de desarrollo y registro de productos farmacéuticos, facilitando la aceptación de los aspectos científicos y procedimientos tanto por parte de las compañías farmacéuticas como de las agencias reguladoras de Estados Unidos (US Food and Drug Administration, FDA), Europa (European Medicines Agency, EMA) y Japón (Ministry of Health, Labour and Welfare, MHLW).  (3)
+						p A continuación, se enuncian los principios de Buenas Prácticas Clínicas establecidos en documento de OMS e ICH. (ver tabla No 1) (2,3,4).
+						
+						
+						//- ---------------- 
+						//- ---------------- Tables
+						//- ----------------
+						+tables-containers('Tabla No 1. Principios de las Buenas Prácticas Clínicas según OMS e ICH.')
+							+set('thead')
+								tr
+									th OMS
+									th ICH
+							+set('tr')
+								tr
+									td 1. La investigación con seres humanos debe ser científicamente sólida y llevarse a cabo de acuerdo con los principios éticos básicos, que tienen su origen en la Declaración de Helsinki. Tres principios éticos básicos de igual importancia, a saber, el respeto a las personas, el beneficio y la justicia, impregnan todos los demás principios de las Buenas Prácticas Clínicas.
+									td 1. Los ensayos clínicos deben realizarse de acuerdo con los principios éticos que tienen su origen en la Declaración de Helsinki, y que sean coherentes con la guía de la BPC y la legislación vigente.
+									
+								tr
+									td 2. La investigación con seres humanos debe justificarse científicamente y describirse en un protocolo claro y detallado.
+									td 5. Los ensayos clínicos deberán estar científicamente justificados y estar descritos en un protocolo claro y detallado.
+									
+								tr
+									td 3. Antes de que se inicie la investigación con seres humanos, deben identificarse los riesgos e incomodidades previsibles y cualquier beneficio anticipado para el sujeto de prueba individual y la sociedad. La investigación de productos o procedimientos de investigación debe estar respaldada por información adecuada, no clínica y, cuando corresponda, clínica.
+									td 2. Antes de iniciar un ensayo, deberán considerarse los riesgos e inconvenientes previsibles en relación con el beneficio esperado, tanto para el sujeto individual del ensayo como para la sociedad. Un ensayo deberá iniciarse y continuar únicamente en el caso de que los beneficios previstos justifican los riesgos. <br/>4. La información clínica y no clínica disponible sobre un medicamento en investigación deberá ser suficiente para avalar el ensayo clínico propuesto.
+									
+								tr
+									td 4. La investigación con seres humanos debe iniciarse solo si los beneficios anticipados para el sujeto de investigación individual y la sociedad superan claramente los riesgos. Aunque el beneficio de los resultados del ensayo para la ciencia y la sociedad debe tenerse en cuenta, las consideraciones más importantes son las relacionadas con los derechos, la seguridad y el bienestar de los sujetos del ensayo.
+									td 3. Los derechos, la seguridad y el bienestar de los sujetos de un ensayo son las consideraciones más importantes y deberán prevalecer sobre los intereses de la ciencia y de la sociedad.   
+									
+									
+								tr
+									td 5. La investigación con seres humanos debe recibir la aprobación del comité de ética independiente / junta de revisión institucional (IEC / IRB) / opinión favorable antes del inicio.
+									td 6. El ensayo se deberá realizar de acuerdo con el protocolo que previamente ha recibido un dictamen favorable de un CEIC.
+									
+								tr
+									td 6. La investigación con humanos debe realizarse de conformidad con el protocolo aprobado
+									td &nbsp;
+									
+								tr
+									td 7. Se debe obtener el consentimiento informado otorgado libremente de cada sujeto antes de la participación en la investigación de acuerdo con la (s) cultura (s) y requisitos nacionales. Cuando un sujeto no es capaz de dar su consentimiento informado, se debe obtener el permiso de un representante legalmente autorizado de acuerdo con la ley aplicable.
+									td 9. Se deberá obtener el consentimiento informado, otorgado de forma libre, de cada sujeto antes de su participación en el ensayo clínico.
+									
+								tr
+									td 8. La investigación con seres humanos debe continuar solo si el perfil de riesgo-beneficio sigue siendo favorable.
+									td &nbsp;
+									
+								tr
+									td 9. El personal médico calificado y debidamente autorizado (es decir, médico o, cuando corresponda, dentista) debe ser responsable de la atención médica de los sujetos del ensayo y de cualquier decisión médica tomada en su nombre
+									td 7. El cuidado médico que reciben los sujetos y las decisiones médicas tomadas en su nombre serán siempre responsabilidad de un médico cualificado o, en su caso, un odontólogo cualificado.
+									
+								tr
+									td 10. cada individuo involucrado en la realización de un ensayo debe estar calificado por educación, capacitación y experiencia para realizar su (s) tarea (s) respectiva (s) y tener licencia para hacerlo, cuando sea necesario.
+									td 8. Cada individuo implicado en la realización de un ensayo deberá estar cualificado, por su titulación, formación y experiencia, para realizar sus tareas y responsabilidades respectivas.
+									
+								tr
+									td 11. Toda la información de los ensayos clínicos debe registrarse, manejarse y almacenarse de manera que permita su informe, interpretación y verificación precisos.
+									td 10. Toda la información del ensayo clínico deberá ser registrada, manejada y archivada de forma que permita su comunicación, interpretación y verificación exactas.
+									
+								tr
+									td 12. Se debe proteger la confidencialidad de los registros que podrían identificar a los sujetos, respetando las reglas de privacidad y confidencialidad de acuerdo con los requisitos reglamentarios aplicables.
+									td 11. Se deberá proteger la confidencialidad de los registros que pudieran identificar a los sujetos respetando la privacidad y las normas de confidencialidad de acuerdo con los requisitos legislativos pertinentes.
+									
+									
+								tr
+									td 13. Los productos en investigación deben fabricarse, manipularse y almacenarse de acuerdo con las Buenas Prácticas de Fabricación (GMP) aplicables y deben usarse de acuerdo con el protocolo aprobado.
+									td 12. Los medicamentos en investigación deberán fabricarse, manejarse y almacenarse de acuerdo con las Normas de Correcta Fabricación (NCF) pertinentes y se deberán utilizar de acuerdo con el protocolo aprobado.
+									
+									
+								tr
+									td 14. Se deben implementar sistemas con procedimientos que aseguren la calidad de cada aspecto de la prueba.
+									td 13. Se implantaran sistemas con procedimientos que aseguren la calidad de cada aspecto del ensayo.
+									
+									
+									
+									
+									
+					
+						//- Material modulo
+						+material-modulo('material-mod-4')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=341871&chapterid=9720', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=341871&chapterid=9722', 'enabled', '#test-mod-4')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

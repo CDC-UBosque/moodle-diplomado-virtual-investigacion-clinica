@@ -1,0 +1,115 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 5')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-5')
+						
+						
+						h2 4. Marco normativo sobre ética en investigación
+							
+						p En cuanto al marco regulatorio, existen diversos documentos sobre aspectos éticos en investigación biomédica. A nivel internacional, se pueden tomar en consideración:
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#1' data-toggle='tab') 1
+								li: a(href='#2' data-toggle='tab') 2
+								li: a(href='#3' data-toggle='tab') 3
+								li: a(href='#4' data-toggle='tab') 4
+								li: a(href='#5' data-toggle='tab') 5
+								
+							+set('content')
+								div.tab-pane.fade.active.in#1
+									p Declaración de Helsinki (2013). Iniciativa de la Asociación Médica Mundial, como como “una propuesta de principios éticos para investigación médica en seres humanos, incluida la investigación del material humano y de información identificables” (2). 
+								div.tab-pane.fade#2
+									p Pautas éticas internacionales para la investigación biomédica en seres humanos preparadas por el Consejo de Organizaciones Internacionales de las Ciencias Médicas (CIOMS) en colaboración con la Organización Mundial de la Salud (2002)
+								div.tab-pane.fade#3
+									p Convenio de Oviedo (1997)
+								div.tab-pane.fade#4
+									p Protocolo Adicional (2005)
+								div.tab-pane.fade#5
+									p Guías de ética en investigación OPS.
+									
+						
+						p A nivel nacional, las normas fundamentales son: 
+						
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#6' data-toggle='tab') 1
+								li: a(href='#7' data-toggle='tab') 2
+								li: a(href='#8' data-toggle='tab') 3
+								
+							+set('content')
+								div.tab-pane.fade.active.in#6
+									p Resolución 008430 de 1993 (Por la cual se establecen las normas científicas, técnicas y administrativas para la investigación en salud).
+								div.tab-pane.fade#7
+									p Resolución 2378 de 2008 (Por la cual se adoptan las Buenas Prácticas Clínicas para las instituciones que conducen investigación con medicamentos en seres humanos).
+								div.tab-pane.fade#8
+									p Ley 23 de 1981 – Decreto 3380 de 1981 (Ley de ética médica en Colombia y su decreto reglamentario).
+									
+									
+						p Los elementos fundamentales de las normas mencionadas se pueden comprender mejor a partir de los requisitos éticos propuestos por Ezekiel Emanuel, los cuáles se describirán a continuación.
+									
+					
+						//- Material modulo
+						+material-modulo('material-mod-5')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=342641&chapterid=9738', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=342641&chapterid=9740', 'enabled', '#test-mod-5')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

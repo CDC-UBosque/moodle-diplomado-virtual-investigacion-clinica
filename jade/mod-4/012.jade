@@ -1,0 +1,80 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 4')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-4')
+						
+						h3 7.6. Manual del Investigador. (5, 11, 12, 13)
+						
+						p El Manual del Investigador, es la compilación de los datos clínicos y no clínicos sobre el (los) producto(s) de investigación que es relevante para el estudio del (de los) producto(s) en investigación en seres humanos.
+
+						p En la resolución 2378 de 2008, se establecen las responsabilidades del patrocinador del estudio, estableciendo como punto importante la obligatoriedad de tener disponible  los datos de seguridad y eficacia de estudios clínicos o preclínicos previos para sustentar su administración en humanos, los cuales deben estar consignados en el Manual del Investigador y en donde deben verificarse los siguientes aspectos:  a) Vía de administración b) Dosis c) Periodo de tiempo d) Población del estudio e) Reacciones adversas f) Contraindicaciones. 
+
+						p En este mismo sentido se establece en el documento elaborado y adaptado a partir de la revisión de la Guía ICH E6 (R1), Guía para Buenas Prácticas Clínicas, la Guía del Manual del Investigador, que establece como objetivo: brindar los lineamientos para la edición y actualización del Manual del Investigador.
+
+						p El Invima establece los requisitos que debe cumplir el Manual del Investigador en la Guía para la evaluación y seguimiento de protocolos de investigación Código: ASS-RSA-GU039 Versión: 04 Fecha de Emisión: 05/03/2019 (12)
+
+						p Manual del Investigador, es un documento que debe contener toda la información disponible de estudios clínicos anteriores (fase I, II, III según sea el caso) sobre datos de seguridad de la molécula en investigación como toxicidad, teratogenicidad, farmacodinamia, farmacocinética, propiedades físicas y químicas, interacciones con medicamentos y/o alimentos, efectos secundarios y reacciones adversas, dejando claro los posibles riesgos que se pueden presentar durante el estudio. Además, el manual del investigador debe contener información confiable de estudios pre-clínicos previos que justifiquen el uso de la molécula en seres humanos.
+
+						p En cuanto a las Modificaciones al Manual del Investigador: se debe diligenciar el Formato de presentación y evaluación de modificaciones al manual del investigador ASS-RSA-FM054 de acuerdo a la Guía para la presentación y evaluación de modificaciones al manual del investigador ASS-RSA-GU037 (13). Concepto del comité presentará la evaluación de los riesgos realizando el análisis de las implicaciones del cambio para la seguridad /los derechos de los sujetos del estudio, respecto de las versiones anteriores estableciendo los requerimientos a que haya lugar, incluyendo la solicitud de modificación al protocolo, de ser necesario (enmienda al protocolo) y/o una nueva versión del consentimiento informado.
+
+						
+						
+						
+					
+						//- Material modulo
+						+material-modulo('material-mod-4')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=341871&chapterid=9728', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=341871&chapterid=9730', 'enabled', '#test-mod-4')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

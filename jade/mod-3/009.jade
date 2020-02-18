@@ -1,0 +1,87 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 3')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-3')
+						
+						h2 Glosario
+						
+						ol
+							li <b>Estructura de publicaciones científicas:</b> comienzan con el título, resumen y palabras clave seguido por el texto principal. El texto principal se divide en Introducción, Métodos, Resultados y Discusión, finalizando cuando sea apropiado con conclusiones y referencias.
+							li <b>Medicina Basada en la Evidencia:</b> empleo consciente, explícito y juicioso de la mejor evidencia actual en la toma de decisiones sobre el cuidado sanitario de los pacientes.
+							li <b>Validez interna:</b> hace referencia al rigor metodológico del estudio.
+							li <b>Magnitud e importancia de los resultados del estudio:</b> La interpretación no debe basarse únicamente en la existencia o no de significación estadística, es necesario determinar la precisión de los resultados a través de los intervalos de confianza, su magnitud, y la adecuación de los estimadores de efecto calculados. Por ejemplo, en el caso de los ECA, los resultados deben presentarse tanto en términos de medidas absolutas de riesgo (como la reducción absoluta de riesgo, RAR) como relativas (riesgo relativo, RR).
+							li <b>Aplicabilidad de los resultados:</b> Hace referencia al grado en que los resultados del estudio se pueden extrapolar a nuestro paciente, población o problema.
+							li <b>Aleatorización o Asignación aleatoria:</b> Modo de asignar individuos a grupos de tal modo que cada individuo es asignado independientemente y tiene la misma probabilidad de ser asignado a cada uno de los grupos.
+							li <b>Enmascaramiento/cegamiento:</b> práctica consistente en mantener a los investigadores o a los sujetos del estudio ignorantes de a qué grupo ha sido asignado el sujeto, o de qué población procede, como medio para controlar confusión.
+							li <b>Ciego simple:</b> método de enmascaramiento en el que los participantes en un estudio no conocen su asignación dentro de los grupos de estudio (intervención o control). 
+							li <b>Doble ciego:</b> método de enmascaramiento en el que ni los participantes en el estudio, ni los investigadores que valoran los resultados conocen la asignación de los participantes en los grupos de estudio.
+							li <b>Triple ciego:</b> método de enmascaramiento en el que la asignación de los participantes en los grupos de estudio permanece oculta para tres grupos de personas, que generalmente son los participantes en el estudio, los estadísticos que realizan los análisis y los investigadores que valoran los resultados.
+							li <b>Estudio longitudinal:</b> aquel que permite establecer el orden en el que se producen los acontecimientos en el tiempo. En estos estudios hay que tener en cuenta también la dirección temporal, que puede ir:
+								ul
+									li Hacia delante, desde la causa al efecto (estudios prospectivos): se seleccionan los sujetos en función de la exposición y se evalúa la aparición posterior del efecto.
+									li Hacia atrás, desde el efecto a la causa (estudios retrospectivos): se seleccionan los sujetos en función de si presentan o no el efecto estudiado y se evalúa si anteriormente habían estado expuestos a un determinado factor.
+									
+							li <b>Factor de confusión:</b> Aparece cuando no se haya evitado en el diseño la presencia de variables externas distorsionadoras o no se haya controlado su efecto en el análisis. Cumplen tres requisitos: se asocia a la exposición, es factor de riesgo o pronóstico de la enfermedad y no es un paso intermedio entre ambas.
+							li <b>Intervalo de confianza:</b> Es el intervalo dentro del que se encuentra la verdadera magnitud del efecto (nunca conocida exactamente) con un grado prefijado de seguridad. A menudo se habla de "intervalo de confianza al 95%" (o "límites de confianza al 95%"). Quiere decir que dentro de ese intervalo se encontraría el verdadero valor en el 95% los casos. 
+							li <b>Riesgo relativo:</b> Es el cociente entre el riesgo en el grupo tratado y el riesgo en el grupo control. Es una medida de la eficacia de un tratamiento. Si es igual a 1, el efecto del tratamiento no es distinto del efecto del control. Si el RR es mayor (o menor) que 1, el efecto del tratamiento es mayor (o menor) que el del control. 
+							li <b>Sesgo o error sistemático:</b> Cualquier error o tendencia en la recogida, análisis, interpretación, publicación o revisión de los datos que pueda conducir a conclusiones que son sistemáticamente diferentes de la verdad.
+									
+									
+					
+						//- Material modulo
+						+material-modulo('material-mod-3')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=340019&chapterid=9710', 'enabled', '#', 'disabled', '#test-mod-3')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

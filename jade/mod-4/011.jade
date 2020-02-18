@@ -1,0 +1,112 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 4')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-4')
+						
+						h3 7.5. Resolución 2011020764 de 2011. (10)
+						
+						p Por la cual se establece el reglamento relativo al contenido y periodicidad de los reportes de eventos adversos en la fase de investigación clínica con medicamentos en humanos, de que trata el artículo 146 del Decreto 677 de 1995.
+
+						p Con respecto a los eventos adversos, es importante tener en cuenta algunas definiciones:
+						
+						
+						p <b>Evento Adverso (EA):</b> cualquier ocurrencia médica adversa en un paciente o sujeto de una investigación clínica a quien se le administró un producto farmacéutico y que no necesariamente tiene una relación causal con este tratamiento. Según lo anterior, un EA puede ser cualquier signo desfavorable y no intencionado (incluyendo un hallazgo anormal de laboratorio), síntoma o enfermedad asociada temporalmente con el uso de un producto medicinal (en investigación), esté o no relacionado con este.
+						p <b>Evento Adverso Serio (EAS) o Reacción Adversa Medicamentosa Seria (RAM Seria):</b> cualquier ocurrencia desfavorable que a cualquier dosis:
+						
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#1' data-toggle='tab') 1
+								li: a(href='#2' data-toggle='tab') 2
+								li: a(href='#3' data-toggle='tab') 3
+								
+							+set('content')
+								div.tab-pane.fade.active.in#1
+									p Resulte en fallecimiento.
+								div.tab-pane.fade#2
+									p Amanece la vida, requiera hospitalización del paciente o prolongación de la hospitalización existente.
+								div.tab-pane.fade#3
+									p Dé como resultado incapacidad/invalidez persistente o significativa, o es una anomalía congénita/defecto de nacimiento.
+						
+						
+						p <b>Evento adverso no serio:</b> todos los demás adversos que no cumplen con alguno de los criterios de seriedad mencionados anteriormente serán clasificados como no serios.
+						
+						
+						
+						
+						
+						//- ---------------- 
+						//- ---------------- Resaltado text
+						//- ----------------			
+						div.resaltado-txt
+							h4 REPORTE DE EVENTOS ADVERSOS SERIOS NACIONALES
+							p El investigador debe reportar al Patrocinador y al Comité de Ética en Investigación todos los eventos adversos serios, en un plazo no mayor a 24 horas, luego de conocida la ocurrencia del evento, manteniendo la confidencialidad de la información.
+
+							p El Patrocinador o CRO reportará a Invima en un plazo no mayor a 7 días hábiles, a partir del primer reporte realizado por el investigador, 15 días después del primer reporte realizará el segundo reporte a invima y el reporte de desenlace final.
+							h4 REPORTE DE EVENTOS ADVERSOS NO SERIOS NACIONALES E INTERNACIONALES
+							p El Investigador reportará al patrocinador o CRO, de acuerdo a lo estipulado en el protocolo. El Patrocinador reportará a Invima a través del Manual del Investigador con periodicidad anual o a petición de ellos.
+
+						
+						
+						
+					
+						//- Material modulo
+						+material-modulo('material-mod-4')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=341871&chapterid=9727', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=341871&chapterid=9729', 'enabled', '#test-mod-4')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

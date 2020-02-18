@@ -1,0 +1,291 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 5')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-5')
+						
+						
+						h2 5. Requisitos éticos en investigación
+							
+						p Para Ezekiel Emanuel (3), la historia de la ética en investigación ha pasado por 4 etapas:
+						
+						//- ---------------- 
+						//- ---------------- Accordion
+						//- ---------------- 
+						+accordion('accordion1')
+							+accordion-item('#accordion1', '#box1', 'box1', 'Paternalismo de los investigadores')
+								p En este primer momento los individuos y las comunidades no tienen ninguna participación en la realización de los estudios. Se prefiere la utilización de poblaciones vulnerables, quienes desconocen sus derechos o están en incapacidad de reivindicarlos. No existen marcos regulatorios robustos ni sistemas de verificación de las medidas para minimizar el riesgo para los participantes o para garantizar el respeto por sus derechos fundamentales. 
+								p Existe una confianza desproporcionada en la ética profesional de los investigadores y en la necesidad de la experimentación para el avance de la investigación como motor del progreso económico y social. Esta fue la tendencia hasta la primera mitad de la década de los años setenta.
+								
+							+accordion-item('#accordion1', '#box2', 'box2', 'Proteccionismo regulatorio')
+								p Se promulgan normas, declaraciones, leyes, que buscan establecer los criterios ético-legales de protección a los participantes en proyectos de investigación. Se crean instituciones (Comités de Ética en Investigación) con la competencia para hacer efectiva esta revisión de estudios y la supervisión de los mismos. A esta etapa pertenecen las iniciativas que llevaron a la promulgación del Código de Núremberg, la Declaración de Helsinki y el Reporte Belmont.
+								
+							+accordion-item('#accordion1', '#box3', 'box3', 'Acceso  a los beneficios de la investigación biomédica')
+								p A partir de los estudios para determinar la eficacia de la Zidovudina en la prevención de la transmisión perinatal de VIH, y de la pugna de Suráfrica por lograr un mayor acceso para las poblaciones con infección por VIH a los medicamentos antiretrovirales, se ingresa en una nueva etapa de la investigación biomédica, en la que el énfasis puesto en el consentimiento informado es insuficiente en el contexto de la investigación trasnacional, y donde se pondera el deber moral de patrocinadores e investigadores en garantizar acceso a tratamientos benéficos identificados en la investigación biomédica. 
+								p A este momento pertenece también la experiencia en el desarrollo del Trastuzumab para algunas mujeres con cáncer de seno en la década de los ochenta.
+							
+							+accordion-item('#accordion1', '#box4', 'box4', 'Investigación participativa basada en la comunidad')
+								p Es el énfasis propuesto en los últimos años en la investigación biomédica y es el foco a donde debe apuntar la investigación, particularmente en nuestros países en vías de desarrollo. Las comunidades no quieren ser consideradas exclusivamente como sujetos de experimentación, sino contribuir de forma activa en la planeación, implementación y supervisión de los proyectos de investigación. Este modelo demanda una relación más horizontal entre investigadores y comunidades. 
+								p En este modelo se pueden enmarcar ensayos clínicos de terapia génica (como el trabajo para enfermedad de Tay Sachs), estudios en pacientes con déficit de alfa 1 antitripsina, el estudio para el desarrollo del Trastuzumab (y la decidida colaboración de la Coalición Americana de mujeres con cáncer de seno en su desarrollo), estudios en el contexto de la epidemia por virus Ébola en 2014, y el estudio de la Universidad de Antioquia con la comunidad indígena Tule (Kuna) en el Urabá antioqueño.
+								
+									
+						
+						p Emanuel (4) ha propuesto algunos ejes que deben orientar la revisión ética de los proyectos de investigación, tanto por parte de los investigadores, hasta los comités institucionales de ética en investigación y los comités consultivos.
+						
+						
+						//- ---------------- 
+						//- ---------------- Accordion
+						//- ---------------- 
+						+accordion('accordion1')
+							+accordion-item('#accordion1', '#box5', 'box5', 'a. Valor social de la investigación')
+								p Puntos a tener en cuenta
+								ul
+									li ¿La pregunta de investigación ha sido respondida anteriormente?
+									li Ensayos confirmatorios.
+									li Meta-análisis acumulativos.
+									li Pertinencia, impacto de la investigación de acuerdo a las necesidades de las comunidades en quienes se realiza la investigación o quienes pueden verse beneficiadas.
+									li Asegurar que los datos son válidos y robustos (para justificar la necesidad de nuevas investigaciones).
+									li Diseminación de conocimiento.
+									
+							+accordion-item('#accordion1', '#box6', 'box6', 'b. Validez científica')
+								p Puntos a tener en cuenta
+								ul
+									li ¿Cuál es la ventaja comparativa entre un ensayo aleatorizado controlado comparado con otros diseños alternativos?
+									li ¿Cuáles problemas comprometen la validez de los ensayos clínicos controlados en la práctica (por ejemplo: infraestructura)?
+									li Poder estadístico de los ensayos clínicos.
+									li Sesgos de publicación.
+									li Preocupaciones acerca de la generalización de los resultados.
+									li Asegurar que los ensayos clínicos cumplen los objetivos y su realización es factible.
+									
+							+accordion-item('#accordion1', '#box7', 'box7', 'c. Selección equitativa de los participantes')
+								p Puntos a tener en cuenta
+								ul
+									li Transparencia en los criterios de selección.
+									li Aplicación estricta de criterios de selección.
+									li Seleccionar la población de estudio que permita asegurar la validez científica.
+									li Distribución equitativa de riesgos y beneficios.
+									li No participación de poblaciones vulnerables (al menos que esté justificada su participación informada).
+									li Procedimientos de captación de participantes.
+									
+							+accordion-item('#accordion1', '#box8', 'box8', 'd. Relación favorable entre riesgos y beneficios')
+								p Puntos a tener en cuenta
+								ul
+									li ¿Los tratamientos en estudio satisfacen el requerimiento de indiferencia?
+									li  Pérdida de la utilidad esperada para algunos voluntarios de investigación
+									li ¿Hay un beneficio para los voluntarios derivado de su participación en el ensayo?
+									li ¿Cuándo debe ser detenido un estudio?
+									li ¿Cuál debe ser el tratamiento de control cuando no hay estándar de cuidado?
+									li Minimización de riesgos. 
+									
+							+accordion-item('#accordion1', '#box9', 'box9', 'e. Consentimiento Informado')
+								p Puntos a tener en cuenta
+								ul
+									li Características del consentimiento informado en ensayos clínicos controlados.
+									li Ensayos de riesgo mínimo o menor al mínimo.
+									li Excepciones en investigación en emergencias.
+									li Evaluación de capacidad para la toma de decisiones.
+									li Información suficiente y voluntariedad.
+									li Proceso de consentimiento informado en el caso de menores de edad o personas en incapacidad de otorgarlo.
+									
+							+accordion-item('#accordion1', '#box10', 'box10', 'f. Revisión independiente del proyecto de investigación')
+								p Puntos a tener en cuenta
+								ul
+									li Asegurar la rendición pública de cuentas a través de la revisión de un comité de ética independiente.
+									li La revisión transparente del proyecto de investigación por parte de   comités internacionales o de organizaciones no gubernamentales (cuando esta condición aplica). 
+									li Revisión y declaración de conflictos de intereses financieros.
+									
+							+accordion-item('#accordion1', '#box11', 'box11', 'g. Respeto por los derechos de las personas y participantes')
+								p Puntos a tener en cuenta
+								ul
+									li ¿Es aceptable la retención de información para los participantes? 
+									li Asignación a los brazos del estudio (asignación aleatoria de intervenciones-enmascaramiento). 
+									li Responsabilidad por eventos adversos (seguro, póliza de responsabilidad por eventos adversos durante el curso de un proyecto de investigación). 
+									li Estrategias para supervisar la seguridad de los participantes –monitoreo de seguridad.
+									li Resultados provisionales en términos de justificación de la continuidad del estudio y seguridad para los participantes.
+									li Estrategias para garantizar la confidencialidad y la privacidad.
+									li Estrategias para garantizar la asequibilidad a los beneficios identificados en los proyectos de investigación.
+									
+							+accordion-item('#accordion1', '#box12', 'box12', 'h. Investigación participativa basada en la comunidad')
+								p Puntos a tener en cuenta
+								ul
+									li Participación de las comunidades locales y de los stakeholders en la planeación, conducción y supervisión de los ensayos.  
+									li Asegurar beneficios justos a partir de la conducción de los ensayos (contribución al fortalecimiento de los sistemas de salud, disponibilidad de tratamientos probados o vacunas).
+									li Difusión de resultados.
+									
+						
+						p En el contexto de nuestros países en vías de desarrollo, el primer punto enunciado (valor social de la investigación) es un requerimiento de máxima importancia. Buena parte de los esfuerzos en investigación trasnacional se concentran en condiciones que no representan prioridades para la salud pública y las condiciones de vida en nuestros países. Esto es lo que algunos autores desde los años noventa han denominado “la brecha 10/90”: una estadística en la que, mientras el 90% de los fondos de investigación a nivel global se dirigen a necesidades de salud de las poblaciones en países industrializados (lo que representa aproximadamente un 10% de la carga global de mortalidad prematura), aproximadamente el 90% de la carga global de mortalidad prematura puede ser atribuida a enfermedades que afectan principalmente poblaciones de los países en vías de desarrollo (malaria, tuberculosis, VIH, enfermedades tropicales), que solamente cuentan con el 10% del presupuesto global al año (entre 50 y 60 billones de dólares) (5).
+						p Por esta razón, hay tres elementos que son de capital importancia para la investigación en nuestros países: priorización de las líneas de investigación, construcción de capacidad local en investigación y, como se ha anotado, la superación de un modelo de investigación extractiva hacia un modelo de investigación basado en la comunidad (6).
+						p Uno de los denominadores comunes en la historia de los abusos en investigación, ha sido la participación de individuos y comunidades en condición de vulnerabilidad. La vulnerabilidad (7) exhibe diversas formas:	
+						
+						
+						//- ---------------- 
+						//- ---------------- Resaltado text
+						//- ----------------			
+						div.resaltado-txt
+							ul
+								li Vulnerabilidad cognitiva o de la comunicación.
+								li Vulnerabilidad situacional.
+								li Vulnerabilidad institucional.
+								li Vulnerabilidad por subordinación.
+								li Vulnerabilidad médica.
+								li Vulnerabilidad económica.
+								li Vulnerabilidad social.
+								
+						
+						p En cuanto a la participación de poblaciones en condiciones de vulnerabilidad, cabe recordar que solo se justifica la participación de poblaciones en condiciones de indefensión o con limitaciones para hacer efectivos sus derechos, si se cumplen seis criterios básicos de forma simultánea: 
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#1' data-toggle='tab') 1
+								li: a(href='#2' data-toggle='tab') 2
+								li: a(href='#3' data-toggle='tab') 3
+								li: a(href='#4' data-toggle='tab') 4
+								li: a(href='#5' data-toggle='tab') 5
+								li: a(href='#6' data-toggle='tab') 6
+								
+							+set('content')
+								div.tab-pane.fade.active.in#1
+									p La pregunta de investigación solo puede ser resuelta si la investigación se realiza en esa población.
+								div.tab-pane.fade#2
+									p La pregunta de investigación busca mejorar el avance del conocimiento para una condición de importancia (bien por criterios de prevalencia, beneficio terapéutico, o calidad de vida para tal población).
+								div.tab-pane.fade#3
+									p La relación riesgo-beneficio del protocolo de investigación es claramente favorable para la población de estudio.
+								div.tab-pane.fade#4
+									p Se han tomado en consideración las medidas necesarias para minimizar los posibles riesgos evitables y asegurar los derechos fundamentales de estas poblaciones.
+								div.tab-pane.fade#5
+									p Los individuos participantes cuentan con un proceso de consentimiento que garantiza la salvaguarda de sus derechos.
+								div.tab-pane.fade#6
+									p Se garantizan los mecanismos mediante los cuales los beneficios identificados por la investigación serán asequibles para los individuos y las comunidades participantes.
+									
+									
+									
+						p Se debe evitar la coerción e inducción indebida (por ejemplo, mediante incentivos económicos desproporcionados por su participación a individuos en condición de vulnerabilidad socioeconómica o por subordinación), consentimiento apropiadamente informado al paciente, proporcionalidad entre riesgo y beneficio, minimización del riesgo, justificación para la utilización control con uso de placebo y la competencia científica y clínica de los investigadores. Todos y cada uno de estos elementos deberán ser garantizados dentro de un marco ético para realización de ensayos clínicos. 
+						p No obstante, se han realizado estudios empíricos con el propósito de evaluar variables como la comprensión que tienen los voluntarios de investigación del consentimiento informado, el conocimiento del tratamiento que van a recibir, la comprensión de criterios como aleatorización (entre otros), con la evidencia de un conocimiento muy pobre de estos conceptos. La mayoría de los pacientes desconocen por completo el tipo de riesgos y beneficios a los que han sido sometidos, así como es evidente que muchas investigaciones han demostrado ser innecesarias e injustificadas en su realización. 
+
+						p Algunas consideraciones adicionales sobre consentimiento y asentimiento informado
+						p El artículo 15 de la Resolución 008430 de 1993 y la pauta número 5 de las Guías CIOMS describen la información fundamental que debe contener un formulario de Consentimiento informado (CI), recordando que el CI no es solo un documento de trámite; es un proceso gradual de intercambio de información, cuyo objetivo en el contexto de la investigación es promover la participación informada de los voluntarios de investigación. 
+						p Dentro de la información básica que debe contener el CI está:
+									
+						
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#7' data-toggle='tab') 1
+								li: a(href='#8' data-toggle='tab') 2
+								li: a(href='#9' data-toggle='tab') 3
+								li: a(href='#10' data-toggle='tab') 4
+								li: a(href='#11' data-toggle='tab') 5
+								li: a(href='#12' data-toggle='tab') 6
+								
+							+set('content')
+								div.tab-pane.fade.active.in#1
+									p La identidad y filiación del o los investigadores.
+								div.tab-pane.fade#2
+									p El propósito de la investigación. 
+								div.tab-pane.fade#3
+									p El tiempo que durará la participación y el derecho a retirarse en cualquier momento y por cualquier razón.
+								div.tab-pane.fade#4
+									p Los posibles beneficios para el individuo y la sociedad.
+								div.tab-pane.fade#5
+									p Los posibles daños, riesgos y malestares.
+								div.tab-pane.fade#6
+									p El compromiso de mantener la confidencialidad estricta de los resultados y la manera de obtener una copia de los mismos.
+								div.tab-pane.fade#7
+									p En los casos de estudios de farmacogenética o que requieren la utilización de especímenes biológicos, cuáles serán los mecanismos para asegurar la confidencialidad de datos personales y sensibles (codificación de muestras, anonimización, guardián de claves, etc.), según el sistema integral de protección de datos (Ley 1581 de 2012). 
+								div.tab-pane.fade#8
+									p La forma de ponerse en contacto con el investigador.
+								div.tab-pane.fade#9
+									p Un lugar específico en el documento para la firma, indicando que la persona está de acuerdo en participar y que entiende el propósito de la investigación (cuando se trate de personas en incapacidad de otorgar el consentimiento, se debe contar con un CI por representación y asentimiento informado en el caso de menores de 14 años de edad).
+								div.tab-pane.fade#10
+									p La persona o institución que patrocina el estudio.
+								div.tab-pane.fade#11
+									p La selección de sujetos y su número.
+								div.tab-pane.fade#12
+									p Los procedimientos que van a llevarse a cabo.
+								div.tab-pane.fade#13
+									p Las estrategias dispuestas para la minimización de riesgos durante la participación en el estudio.
+								div.tab-pane.fade#14
+									p La aclaración de que se trata de un ensayo clínico o una investigación y no de una propuesta terapéutica.
+								div.tab-pane.fade#15
+									p Las estrategias dispuestas para garantizar el acceso de los participantes a los datos finales de la investigación.
+								div.tab-pane.fade#16
+									p Las estrategias dispuestas para garantizar el acceso de los participantes a los beneficios terapéuticos, diagnósticos o preventivos identificados en la investigación.
+								div.tab-pane.fade#17
+									p La forma en la que serán atendidos y cubiertos los eventos adversos relacionados con la participación en el estudio.
+								div.tab-pane.fade#18
+									p El tipio de compensación por la participación en el estudio (cuando esto aplique).			
+									
+						
+						p Es importante recordar que el CI no es solo un documento de trámite; constituye un proceso gradual de intercambio de información cuyo objetivo, en el contexto de la investigación, es promover la participación informada de los voluntarios, quienes deben comprender las particularidades de un protocolo experimental, la diferencia entre un ensayo clínico y una terapia comprobada, así como sus derechos y deberes en el curso de la investigación. Por esta razón, más que un acto jurídico precedido de requisitos de validez (ausencia de error, fuerza, dolo) y de existencia (objeto lícito, solemnidad, acuerdo de voluntades) (8), constituye una obligación ética que no se agota en el diligenciamiento y firma de un documento formal. En este sentido, se debe promover un proceso continuo de CI entre el equipo de investigadores y la comunidad, el cual permite una comunicación gradual desde las fases previas al inicio de un cronograma de investigación, durante la implementación y tras su culminación. Un proceso dinámico de intercambio de información puede promover la confianza entre investigadores y voluntarios, favorecer la compresión de aspectos relevantes de un estudio, así como estimular la participación informada de la comunidad (9).
+						p En los casos de personas en incapacidad de otorgar su consentimiento, bien sea porque carecen de la capacidad jurídica o la competencia médica (menores de 18 años, discapacidad funcional cognitiva), se debe recurrir a la figura de la toma de decisiones por sustitución, en la cual un represéntate reconocido por la ley, puede diligenciar el consentimiento informado, siempre y cuando se cumplan los criterios anteriormente expuestos que justifiquen la investigación en personas en condición de vulnerabilidad. 
+						p En las investigaciones que requieren la participación de personas menores de 18 años cabe recordar que, desde el punto de vista normativo en Colombia, en el rango de edades comprendidas entre 0 y hasta antes de 14 años (infantes e impúberes) el CI lo otorgan los representantes legales, si bien los niños, niñas y adolescentes (NNA) deben ser incluidos en el proceso de toma de decisiones conforme al desarrollo neurocognitivo y psicológico individual, mediante un proceso de asentimiento informado, el cual constituye una obligación ética y jurídica en el ámbito de la investigación, si bien no reviste un carácter vinculante en el ámbito asistencial. En estos escenarios debe prevalecer el interés superior del NNA sobre los intereses de cualquier otro actor en la sociedad (10).
+						p En el rango entre 14 y antes de 18 años (menores adultos) se debe obtener consentimiento informado del paciente y de su representante legal (consentimiento complementado), si bien prevalece la voluntad del adolescente en los casos relativos al ejercicio de derechos personales o personalísimos (10).  En otras jurisdicciones, la edad a partir de la cual se reconoce capacidad para la toma de decisiones varía ampliamente (Holanda: 12 años; Dinamarca: 15 años; EEUU: 18 años) (11), si bien se sugiere tal reconocimiento a partir de los 12 años de edad mediante un proceso dual de CI con los representantes legales del NNA.
+						p Un tema recurrente de discusión apropósito de la inclusión de niños y niñas en proyectos de investigación es el rango de edad a partir de cual se debe solicitar asentimiento informado, así como los instrumentos que se deben utilizar para evaluar la competencia para tal asentimiento. En el marco normativo colombiano, el artículo 25 de la Resolución 008430 de 1993 es explícito al establecer que, para la investigación en NNA y diversidad funcional cognitiva, la obtención del CI de los representantes legales es de total obligatoriedad y además debe contar con una evaluación por parte de personal de salud (neurólogo, psiquiatra o psicólogo) capacitado para determinar las habilidades funcionales necesarias para la toma de decisiones. 
+						p Algunos autores proponen la inclusión progresiva de los NNA en el proceso de toma de decisiones en investigación de acuerdo a tres a criterios: desarrollo neurocognitivo y psicológico, capacidades de comunicación y características del estudio. Los NNA sin capacidades para decidir ni comunicar de forma coherente sus preferencias, solo pueden ser incluidos en proyectos de investigación con una proporción favorable de riesgo beneficio, mediante el CI otorgado por sus representantes, siempre y cuando el protocolo respete el interés superior de los NNA, quienes deben ser incluidos en la explicación sobre las particularidades del protocolo de acuerdo a su grado de madurez neurocognitiva. Si el proyecto de investigación no ofrece beneficios potenciales para el participante, el umbral de riesgo debe ser mínimo o menor al mínimo; si el proyecto ofrece beneficios potenciales al participante, el umbral de riesgo puede ser mayor al mínimo, pero su evaluación particular debe ser verificada por los investigadores y el comité de ética en investigación.
+						p En NNA con capacidad para decidir y comunicar de forma coherente sus preferencias, además de incluirlos en la explicación sobre las condiciones del estudio, se debe consultar su voluntad. La negativa de los NNA a participar en una investigación se debe respetar independientemente del CI otorgado por sus sustitutos. Su asentimiento está condicionado por el consentimiento de sus representantes, las características del estudio y el interés superior del paciente. 
+						p En medio de la controversia a propósito de la edad a partir de la cual se debe solicitar asentimiento en investigación, algunos autores (12) sugieren establecer un rango de edad escolar (entre 5 y 7 años) asociado a un proceso personalizado de evaluación de la competencia para participar en el proceso de toma de decisiones, el cual contempla la posibilidad de que niños por debajo de dicho rango puedan participar en el proceso. Estos autores proponen criterios de personalización para el asentimiento en niños en edad escolar: la complejidad del estudio, las experiencias previas del niño con respecto a su condición actual y otros factores que puedan influenciar su habilidad para asentir. La evaluación de tal habilidad se debe realizar de forma interdisciplinaria a través de instrumentos validados, de los cuales la entrevista semi-estructurada MacArthur, específica para investigación (MacArthur Competence Assessment Tool for Clinical Research - MacCAT-CR), ha demostrado un buen perfil de sensibilidad y especificidad. 	
+												
+												
+					
+						//- Material modulo
+						+material-modulo('material-mod-5')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=342641&chapterid=9739', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=342641&chapterid=9741', 'enabled', '#test-mod-5')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

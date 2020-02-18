@@ -1,0 +1,264 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 3')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-3')
+						
+						h2 5. Medicina basada en la evidencia
+						
+						p La medicina basada en la evidencia (MBE) implica que el profesional integre su conocimiento y juicio médico con la mejor evidencia científica existente. Determinar cuáles son las mejores evidencias exige habilidades en la identificación, análisis crítico y jerarquización de las evidencias disponibles en la literatura. Este primer paso es imprescindible, puesto que cualquier recomendación o grado de recomendación que se proponga respecto a una intervención preventiva o terapéutica, o respecto a un procedimiento diagnóstico, ha de estar directamente relacionada con la calidad (y otros factores) de la evidencia existente.
+
+						p Hasta hace unos años, estos grupos de expertos seguían una metodología informal para alcanzar los acuerdos, pero se han mejorado los procedimientos de jerarquización de la evidencia y de establecimiento de las recomendaciones pertinentes. Existe un amplio número de sistemas refinados de categorización de la evidencia científica, entre los que podemos señalar: el modelo inglés Oxford Centre for Evidence-Based Medicine (OCEBM), el escocés Scottish Intercollegiate Guidelines Network (SIGN) o el estadounidense del American College of Chest Physicians (ACCP) que utilizó la misma ACCP en sus guías sobre trombosis venosa hasta su séptima revisión (16, 17, 18). Aquí entra en consideración el sistema Grading of Recommendations, Assessment, Development and Evaluation (GRADE). Todos ellos atribuían diferentes niveles de calidad a los estudios sobre un determinado problema, que luego permitían asignar distintos grados de recomendación.
+
+						p Grading of Recommendations, Assessment, Development and Evaluation (GRADE) define la calidad de la evidencia como el grado de confianza que tenemos en que la estimación de un efecto sea la adecuada para efectuar una recomendación. Para cada uno de los desenlaces o resultados clave se efectúa una evaluación. Así, una misma comparación de una intervención terapéutica o preventiva puede recibir diferentes asignaciones de la calidad de la evidencia. En la clasificación del nivel de calidad de la evidencia, el sistema GRADE establece 4 categorías: alta, moderada, baja y muy baja. Lo que representa o significa cada una de las 4 categorías, en su concepción inicial y en la actual, se expone en la tabla No 1.
+						
+						//- ---------------- 
+						//- ---------------- Tables
+						//- ----------------
+						+tables-containers('Tabla No 1. Sistema GRADE: Significado de los 4 niveles de evidencia')
+							+set('thead')
+								tr
+									th Niveles de calidad
+									th Definición actual
+									th Concepto anterior
+							+set('tr')
+								tr
+									td Alto
+									td Alta confianza en la coincidencia entre el efecto real y el estimado
+									td La confianza en la estimación del efecto no variará en posteriores estudios
+								tr
+									td Moderado
+									td Moderada confianza en la estimación del efecto. Hay posibilidad de que el efecto real esté alejado del efecto estimado
+									td Posteriores estudios pueden tener un importante impacto en nuestra confianza en la estimación del efecto
+								tr
+									td Bajo
+									td Confianza limitada en la estimación del efecto. El efecto real puede estar lejos del estimado
+									td Es muy probable que posteriores estudios cambien nuestra confianza en la estimación del efecto
+								tr
+									td Muy bajo
+									td Poca confianza en el efecto estimado. El efecto verdadero muy probablemente sea diferente del estimado
+									td Cualquier estimación es muy incierta
+								tr
+									td.small(colspan='3') Fuente: Andrews JC, Schünemann HJ, Oxman AD, et al. GRADE guidelines: 15. Goingfromevidencetorecommendation-determinants of a recommendation’sdirection and strength. J ClinEpidemiol 2013; 66 (7): 726-735.
+						
+						
+						p En una primera etapa el sistema GRADE considera de calidad alta los estudios experimentales (ensayos clínicos aleatorizados) y de calidad baja los estudios observacionales (casos y controles, cohortes). En un segundo paso, para refinar el nivel de calidad, el sistema establece una serie de ítems que se deben considerar y que pueden hacer bajar o subir el escalón o nivel de la calidad inicialmente asignada.
+						
+						h3 Ítems que bajan la calidad:
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#1' data-toggle='tab') a
+								li: a(href='#2' data-toggle='tab') b
+								li: a(href='#3' data-toggle='tab') c
+								li: a(href='#4' data-toggle='tab') d
+								li: a(href='#5' data-toggle='tab') e
+								
+							+set('content')
+								div.tab-pane.fade.active.in#1
+									p Limitaciones en el diseño y ejecución del estudio (riesgo de sesgo): aleatorización insuficiente o incorrecta, falta de enmascaramiento, pérdidas importantes de seguimiento, análisis sin intención de tratar y ensayos acabados antes de tiempo.
+								div.tab-pane.fade#2
+									p Inconsistencia de los resultados (inconsistency): cuando los resultados muestran amplia variabilidad o heterogeneidad no explicada. Particularmente si unos estudios muestran beneficios sustanciales y otros ningún efecto o incluso perjuicio.
+								div.tab-pane.fade#3
+									p Incertidumbre acerca de que la evidencia sea directa (indirectness): Siguiendo el método PICO, puede ocurrir con los pacientes estudiados (diferencias en edad, sexo o estadio clínico); o con la intervención, en caso de que ésta sea parecida pero no idéntica; o con la comparación que se realiza; o con los resultados, si se comparan unos a corto plazo y otros a largo plazo, etc. 
+								div.tab-pane.fade#4
+									p Imprecisión: tiene lugar si los intervalos de confianza (IC) son amplios, las muestras pequeñas, o los eventos son pocos.
+								div.tab-pane.fade#5
+									p Sesgo de publicación o notificación (publication bias): cuando existe alta probabilidad de estudios no reportados, principalmente por ausencia de efectos, o no se han incluido todas las variables relevantes de resultado. 
+									
+									
+						h3 Ítems que suben la calidad:
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#6' data-toggle='tab') a
+								li: a(href='#7' data-toggle='tab') b
+								li: a(href='#8' data-toggle='tab') c
+								li: a(href='#9' data-toggle='tab') d
+								
+							+set('content')
+								div.tab-pane.fade.active.in#6
+									p Fuerza de asociación: hallazgos de efectos relativos RR>2, o &lt; 0,5 en estudios observacionales sin factores de confusión. 
+								div.tab-pane.fade#7
+									p Muy fuerte asociación: hallazgos de efectos relativos RR > 5, o &lt;0,2 basados en estudios sin problemas de sesgo o precisión.
+								div.tab-pane.fade#8
+									p Existencia de gradiente dosis-respuesta (dose-response gradient).
+								div.tab-pane.fade#9
+									p Evidencia de que todos los posibles factores de confusión o sesgos podrían haber reducido el efecto observado.
+									
+									
+						p Todos estos ítems se expresan en la tabla No 2, un ascenso o un descenso en el nivel de la calidad de la evidencia. Terminado el análisis, los expertos del GRADE resumen toda la evidencia, respecto a las preguntas concretas y las variables de resultado o desenlace previamente escogidas, en una tabla - resumen que denominan perfil de evidencia (evidence profiles [GRADE EP]) y sumario de hallazgos (summary of findings [GRADE SoF]). Las tablas EP y SoF tienen diferentes propósitos y van dirigidas a colectivos distintos (19).
+						
+						
+						//- ---------------- 
+						//- ---------------- Tables
+						//- ----------------
+						+tables-containers('Tabla No 2. Clasificación del nivel de evidencia según el sistema GRADE')
+							+set('thead')
+								tr
+									th Tipo de estudio
+									th Nivel de calidad a priori
+									th Desciende si
+									th Sube si
+									th Nivel de calidad a posteriori
+							+set('tr')
+								tr
+									td(rowspan='6') Estudios aleatorizados
+									td(rowspan='6') Alta
+									td Riesgo de sesgo
+									td Efecto
+									td Alta 
+									
+								tr
+									td -1 importante
+									td +1 grande
+									td &nbsp; 
+									
+								tr
+									td -2 muy importante
+									td +2 muy grande
+									td &nbsp; 
+									
+								tr
+									td Inconsistencia
+									td Dosis-respuesta
+									td Moderada  
+								
+								tr
+									td −1 importante
+									td +1 gradiente evidente
+									td −1 importante   
+									
+								tr
+									td −2 muy importante
+									td &nbsp; 
+									td &nbsp; 
+									
+								tr
+									td(rowspan='9') Estudios observacionales
+									td(rowspan='9') Baja 
+									td No evidencia directa
+									td Todos los factores de confusión:
+									td(rowspan='4') Baja  
+									
+								tr
+									td −1 importante
+									td +1 reducirían el efecto
+									
+								tr
+									td −2 muy importante
+									td observado
+									
+								tr
+									td Imprecisión
+									td +1 sugerirían un efecto
+									
+								tr
+									td −1 importante
+									td espurio si no hay efecto observado
+									td(rowspan='5') Baja  
+									
+								tr
+									td −2 muy importante
+									td &nbsp; 
+									
+								tr
+									td Sesgo de publicación
+									td &nbsp; 
+									
+								tr
+									td −1 probable
+									td &nbsp; 
+									
+								tr
+									td −2 muy probable
+									td &nbsp; 
+									
+									
+						
+						p El sistema GRADE establece las recomendaciones basándose en una serie de consideraciones (20, 21).  Así: 		
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#10' data-toggle='tab') 1
+								li: a(href='#11' data-toggle='tab') 2
+								li: a(href='#12' data-toggle='tab') 3
+								li: a(href='#13' data-toggle='tab') 4
+								
+							+set('content')
+								div.tab-pane.fade.active.in#10
+									p Balance entre riesgos y beneficios: está basado en el conocimiento de que la mayoría de los clínicos ofrecerán a los pacientes medidas terapéuticas o preventivas siempre que las ventajas de la intervención superen los riesgos y daños colaterales. La certidumbre o incertidumbre con la que el clínico contempla el balance riesgo/beneficio determinará en gran parte la fuerza de la recomendación. . 
+								div.tab-pane.fade#11
+									p Calidad de la evidencia: el segundo factor es la calidad metodológica de los estudios para cada una de las variables de resultados, factor ponderado por los detalles que expusimos y que podían elevar o disminuir el nivel de la evidencia. En general, el grado de la recomendación sigue al nivel de la evidencia, pero no siempre. 
+								div.tab-pane.fade#12
+									p Han de considerarse también los valores y preferencias de los pacientes. Para ello hay que realizar un juicio de valor y conocer previamente los valores y preferencias de la población de nuestro entorno y de posibles diferencias individuales. 
+								div.tab-pane.fade#13
+									p Estimación del consumo de recursos o costos.	
+									
+									
+					
+						//- Material modulo
+						+material-modulo('material-mod-3')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=340019&chapterid=9706', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=340019&chapterid=9708', 'enabled', '#test-mod-3')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

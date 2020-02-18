@@ -1,0 +1,84 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 3')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-3')
+						
+						h2 7. Las siguientes preguntas te pueden ayudar a ser crítico con la lectura:
+						
+						ul
+							li ¿Cuál es la importancia o relevancia de la investigación?
+							li ¿Estás de acuerdo con la forma en que el autor abordó la investigación?
+							li ¿Cuán apropiados son los procedimientos y técnicas de investigación utilizados por el autor?
+							li ¿Hasta qué punto la evidencia presentada fundamenta los argumentos del autor?
+							li ¿Se presentó la suficiente evidencia como para juzgar los resultados de la investigación por uno mismo?
+							li Los hallazgos presentados, ¿se pueden aplicar a otras observaciones (propias o de otros autores)?
+							li ¿Pudiste detectar algunos patrones o contradicciones en los datos que el autor no mencionó?
+							li ¿Las conclusiones representan adecuadamente a la población bajo estudio?
+							li ¿Estás de acuerdo con las conclusiones?
+							li ¿Las conclusiones generalizan demasiado o son lo suficientemente cuidadosas?
+							li Las interpretaciones y reflexiones utilizados en el artículo, ¿parecen responder a algún interés particular de los autores?
+							li A tu mejor entender, ¿los datos presentados son sólidos y reconocidos por los pares?
+							li ¿Logra el artículo cumplir con los objetivos que planteó en un principio?
+							li Revisa alguna bibliografía sobre el tema del artículo. ¿Consideras que el autor ha citado los trabajos más importantes sobre el tema?
+							li ¿Cómo afecta este artículo las impresiones que tenías antes sobre el tema?
+							li ¿Consideras que el artículo está claro y bien escrito?
+									
+									
+					
+						//- Material modulo
+						+material-modulo('material-mod-3')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=340019&chapterid=9708', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=340019&chapterid=9710', 'enabled', '#test-mod-3')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

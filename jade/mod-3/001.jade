@@ -1,0 +1,94 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 3')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-3')
+						
+						h2 Búsqueda sistemática y lectura crítica de la literatura médica científica. Medicina Basada en Evidencia.
+										
+						h3 Tutora: Dra. Alexandra Porras Ramírez
+						
+						p Bacterióloga, maestría en epidemiología de la Universidad del Valle y PhD en Salud Pública de la Universidad Nacional de Colombia. Directora de la Maestría en Epidemiología de la Universidad El Bosque desde 2014. Contratista del Ministerio de Salud y Protección Social 2015-2019. Docente del Doctorado en Salud Pública en la Universidad El Bosque (2018-2019). Jefe de la Subdirección de Estudios Clínicos de la Fundación Santa Fe de Bogotá 2015-2016. Investigadora de ASIESALUD. Ha sido consultora de la Organización Panamericana de la Salud y Contratista en el Instituto Nacional de Salud y la Secretaría Distrital de Salud. Ha realizado y dirigido investigaciones y proyectos nacionales e internacionales y tiene publicaciones en revistas de circulación nacional e internacional.
+						
+						
+						h2 1. Objetivos de aprendizaje
+						
+						p Al finalizar el módulo el participante estará en capacidad de:	
+							
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#1' data-toggle='tab') 1
+								li: a(href='#2' data-toggle='tab') 2
+								li: a(href='#3' data-toggle='tab') 3
+								
+							+set('content')
+								div.tab-pane.fade.active.in#1
+									p Identificar la estructura y los elementos que dotan a un artículo científico de coherencia y rigor metodológico.
+								div.tab-pane.fade#2
+									p Analizar la adecuación de los métodos al objetivo del artículo.
+								div.tab-pane.fade#3
+									p Proporcionar una guía para la valoración personal sistemática y ordenada de un artículo científico (Etiología, diagnóstico, pronóstico, tratamiento, práctica clínica) 
+									
+						
+									
+					
+						//- Material modulo
+						+material-modulo('material-mod-3')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('#', 'disabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=340019&chapterid=9704', 'enabled', '#test-mod-3')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

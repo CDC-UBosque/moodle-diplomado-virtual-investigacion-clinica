@@ -1,0 +1,104 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 4')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-4')
+						
+						
+						h2 5. ¿Cuáles son los actores que participan en una investigación con medicamentos en seres humanos?
+						
+						p En los estudios con medicamentos o dispositivos médicos en los cuales se involucra la participación de seres humanos, se identifican diferentes actores, cada uno con sus funciones y responsabilidades: (ver figura No 1) (1)
+						
+						
+						//- ---------------- 
+						//- ---------------- Accordion
+						//- ---------------- 
+						+accordion('accordion1')
+							+accordion-item('#accordion1', '#box1', 'box1', 'Centro de investigación - Institución Prestadora de Servicios de Salud')
+								p Establecimiento donde se desarrolla el proceso de investigación. Esta institución debe contar con el certificado del “Sistema Único de Habilitación” según la normatividad vigente en Colombia.
+								
+							+accordion-item('#accordion1', '#box2', 'box2', 'El Comité de Ética Institucional')
+								p Es un organismo independiente del centro de investigación, conformado por un grupo profesional multidisciplinario con capacidad crítica que vela por la integridad y derechos de los sujetos participantes. 
+								
+							+accordion-item('#accordion1', '#box3', 'box3', 'El investigador principal')
+								p Es el médico experto en los temas relacionados con la investigación, y es el responsable de la conducción el estudio.
+								
+							+accordion-item('#accordion1', '#box4', 'box4', 'El laboratorio clínico')
+								p Encargado de la toma, procesamiento y embalaje de las muestras relacionadas con el estudio.
+								
+							+accordion-item('#accordion1', '#box5', 'box5', 'Sujetos participantes')
+								p Personas que de manera voluntaria e informada participan en el estudio de investigación. 
+								
+							+accordion-item('#accordion1', '#box6', 'box6', 'El patrocinador')
+								p Es la institución u organización que realiza los aportes para financiar la realización del estudio.
+								
+							+accordion-item('#accordion1', '#box7', 'box7', 'El testigo imparcial')
+								p Persona(s) que asiste(n) al procedimiento de declaración de consentimiento informado y con su firma dan fe de que se ha dado información suficiente y clara sobre los riesgos y beneficios del estudio. El testigo imparcial no puede tener ningún vínculo con los demás actores de la investigación.
+								
+								//- ---------------- 
+								//- ---------------- Image / video + caption
+								//- ---------------- 		
+								+image-caption('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-investigacion-clinica-amgen/images/mod-4/001.jpg', 'example-1', 'https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-investigacion-clinica-amgen/images/mod-4/001.jpg', 'Figura No 1. Actores participan en una investigación con medicamentos en seres humanos.')
+									span Figura No 1. Actores participan en una investigación con medicamentos en seres humanos.
+									
+									
+									
+									
+									
+					
+						//- Material modulo
+						+material-modulo('material-mod-4')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=341871&chapterid=9721', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=341871&chapterid=9723', 'enabled', '#test-mod-4')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

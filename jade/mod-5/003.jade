@@ -1,0 +1,144 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 5')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-5')
+						
+						
+						h2 3. Contexto histórico y marco de principios
+							
+						p La historia de la ética en investigación corre paralela a la historia de los Derechos Humanos. En 1947, tras el fin de la Segunda Guerra Mundial, durante los juicios de Núremberg, se promulga “El Código de Núremberg”, un decálogo de consideraciones éticas a tener en cuenta en la conducción de ensayos clínicos con la participación de seres humanos. Este es el primer documento que exige la solicitud de un consentimiento informado a las personas que participen en ensayos experimentales. El Código de Nuremberg se promulga ante los experimentos llevados a cabo en los campos de concentración durante la Segunda Guerra Mundial, en los cuales se vulneraron derechos fundamentales de poblaciones judías, eslavas, húngaras, homosexuales y personas con discapacidad que fueron, o bien exterminadas, o bien utilizadas como sujetos de experimentación sin contar con su consentimiento. No obstante, el Código de Núremberg no es el primer documento que contempla aspectos éticos en investigación. Desde inicios del siglo XX se había promulgado el Código Ético de Berlín (Normas Prusianas). Paradójicamente, es precisamente en Alemania donde se violentan estos compromisos éticos. En 1948 de promulga la Declaración Universal de los Derechos Humanos. 
+						p La historia de los abusos en investigación es, no obstante, mucho más larga. Dentro de los estudios controversiales desde el punto de vista ético, tenemos, entre otros, los siguientes:
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#1' data-toggle='tab') 1
+								li: a(href='#2' data-toggle='tab') 2
+								li: a(href='#3' data-toggle='tab') 3
+								li: a(href='#4' data-toggle='tab') 4
+								li: a(href='#5' data-toggle='tab') 5
+								li: a(href='#6' data-toggle='tab') 6
+								li: a(href='#7' data-toggle='tab') 7
+								li: a(href='#8' data-toggle='tab') 8
+								li: a(href='#9' data-toggle='tab') 9
+								li: a(href='#10' data-toggle='tab') 10
+								li: a(href='#11' data-toggle='tab') 11
+								li: a(href='#12' data-toggle='tab') 12
+								li: a(href='#13' data-toggle='tab') 13
+								
+							+set('content')
+								div.tab-pane.fade.active.in#1
+									p Los estudios para el desarrollo de la vacuna contra la fiebre amarilla.
+								div.tab-pane.fade#2
+									p El estudio aleatorizado sobre la eficacia de la estreptomicina en el tratamiento de la tuberculosis.
+								div.tab-pane.fade#3
+									p El estudio sobre el desarrollo de la vacuna contra la poliomielitis.
+								div.tab-pane.fade#4
+									p Los experimentos del Escuadrón 731 del Ejército Imperial Japonés.
+								div.tab-pane.fade#5
+									p El experimento Tuskegee.
+								div.tab-pane.fade#6
+									p El experimento Willowbrook (estudio conducido por el pediatra Saul Krugman que buscaba establecer el curso clínico de la hepatitis A. El consentimiento informado era un requisito para la admisión a la institución de Willowbrook, la cual contaba con cupos limitados).
+								div.tab-pane.fade#7
+									p El estudio en el Hospital Judío de enfermedades crónicas en Brooklyn (en el cual el investigador Chester Southam inoculó células cancerígenas – células HELA- en pacientes adultos mayores con enfermedades neurodegenerativas y demencia).
+								div.tab-pane.fade#8
+									p El experimento “monstruo” de Wendell Johnson (estudio sobre los efectos de los patrones de educación en variables como la tartamudez).
+								div.tab-pane.fade#9
+									p Los estudios de Timothy Leary sobre del uso del ácido lisérgico en California.
+								div.tab-pane.fade#10
+									p El estudio de Stanley Milgram.
+								div.tab-pane.fade#11
+									p El estudio de Zimbardo (Universidad de Stanford).
+								div.tab-pane.fade#12
+									p Los estudios en el asilo mental de Crownsville, con la utilización de personas afroamericanas con trastornos mentales.
+								div.tab-pane.fade#13
+									p El estudio para el desarrollo del medicamento Trovan en Nigeria (iniciativa del laboratorio Pfizer).
+									
+						
+						p En América Latina también se han presentado problemas relativos al respeto de los derechos de sujetos de investigación y de comunidades. Como ejemplos de estudios con problemas éticos en su implementación, en nuestra región, tenemos el estudio Compas y el Proyecto Venezuela para el avance en la investigación de la Enfermedad de Huntington.
+						p Uno de los estudios más controversiales en la historia de la ética de investigación, es el experimento Tuskegee. Se trató de un estudio observacional prospectivo que buscaba responder una pregunta de investigación: ¿cuál es el curso de la sífilis sin tratamiento en una cohorte de pacientes afroamericanos? Para tal efecto se observaron 412 hombres con sífilis en estadios iniciales. En la década de los cuarenta se comprueba que la penicilina benzatínica es útil para el tratamiento. Los directores del estudio, ante la posibilidad de que el estudio tuviera que ser terminado prematuramente, deciden negar sistemáticamente el acceso de los pacientes a la penicilina. Este estudio dura 40 años, finalizando en 1972 en medio de un debate nacional por la utilización de población afroamericana y la financiación parcial con fondos federales. 
+						p Tras este escándalo, la Comisión Nacional para la Protección de Sujetos Humanos en Investigación Biomédica y del Comportamiento, promulga en 1978 el Informe Belmont, el cual propone la incorporación de tres principios éticos fundamentales:
+						
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#14' data-toggle='tab') 1
+								li: a(href='#15' data-toggle='tab') 2
+								li: a(href='#16' data-toggle='tab') 3
+								
+							+set('content')
+								div.tab-pane.fade.active.in#14
+									p Respeto por las personas (que posteriormente se estructurará como principio de autonomía)
+								div.tab-pane.fade#15
+									p Principio de Beneficencia (que posteriormente se diferenciará del principio de no maleficencia.)
+								div.tab-pane.fade#16
+									p Justicia (que se estructurará como justicia distributiva: selección equitativa de los voluntarios participantes en el ensayo; acceso equitativo a los beneficios identificados en la investigación; distribución equivalente de riesgos y beneficios; eficiencia en la utilización de recursos escasos en relación con la equidad).
+									
+									
+						p El primero (respeto por las personas) promueve el respeto por la elección libre y autónoma de los voluntarios sobre su participación en una investigación y, en caso que estos no puedan tomar sus propias decisiones, garantizar los mecanismos para asegurar su protección y representación. La materialización de este principio se refleja en el proceso de consentimiento informado, el cual deberá ser otorgado por parte de los participantes del estudio o de sus representantes legales y enmarcarse en la más absoluta confidencialidad. Los principios de beneficencia/no maleficencia, expresan la relación favorable entre riesgos y beneficios potenciales. El tercero (principio de justicia) se fundamenta sobre la premisa de una distribución equitativa de las cargas y beneficios de la investigación donde el investigador no podrá incluir población vulnerable ni tampoco excluir voluntarios elegibles que pueden beneficiarse de su participación. Sin embargo, a pesar de la aplicación de estos principios se debe reconocer que el Informe Belmont resulta, al día de hoy, insuficiente para proporcionar una amplia cobertura de cuidados y protección a los voluntarios de investigación, requiriendo así un ajuste que incluya consensos más específicos y profundos que abarquen la complejidad de la investigación biomédica actual y sus conflictos de intereses.
+						p Posteriormente, estos tres principios serán revisados por los autores Tom Beauchamp y James Childress en la Universidad de Georgetown, configurando los principios de la ética biomédica de tradición anglosajona. Estos principios se pueden entender como núcleos donde confluyen múltiples valores (1):
+						p Así, los principios de la ética biomédica nacen en el contexto de la investigación con seres humanos, siendo difundidos progresivamente a la práctica clínica, a la salud pública y al bioderecho. En un primer momento, el principio más difundido es el principio de autonomía, el cual se verifica tras el adecuado proceso de consentimiento informado. No obstante, esta no es la única teoría basada en principios. El bioderecho europeo, por ejemplo, promueve otro grupo de principios: autonomía, dignidad, vulnerabilidad e integridad, al tiempo que la Declaración de Bioética y Derechos Humanos (2005) promueve 15 principios articulados en torno al principio de dignidad humana. Estos enfoques proponen un enfoque preferencial hacia la protección de individuos y comunidades en condición de vulnerabilidad, como un pre-requisito para la realización efectiva de la autonomía individual.
+									
+					
+						//- Material modulo
+						+material-modulo('material-mod-5')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=342641&chapterid=9737', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=342641&chapterid=9739', 'enabled', '#test-mod-5')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			
