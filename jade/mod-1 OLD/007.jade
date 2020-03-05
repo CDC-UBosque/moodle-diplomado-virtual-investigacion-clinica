@@ -1,0 +1,132 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 1')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-1')
+						
+						h2 7. ¿Cómo se realiza la planificación de las mediciones? precisión y exactitud.
+						
+						h3 Evaluando el Papel del Error Sistemático en Estudios Clínicos y Epidemiológicos.
+
+						p Todo estudio de investigación tiene incertidumbres (10). De acuerdo a Bailar, un estadístico inglés,  “La pregunta adecuada no es si existen incertidumbres sobre datos epidemiológicos, más bien, es si las incertidumbres son tan grandes que no se puede sacar conclusiones útiles a partir de los datos”
+						p Todo estudio clínico debe intentar sacar inferencias. La inferencia implica hacer generalizaciones acerca de una población con base en una muestra 
+						p Existe la posibilidad de que esa inferencia sea inexacta o imprecisa debido a:
+						
+						ul
+							li Azar o la variabilidad de la muestra (error aleatorio) 
+							li Sesgo (error sistemático)
+							
+						p Cuando se estudia una muestra de la población, la asociación observada puede ser:
+						
+						ul
+							li Aleatoria
+							li Sesgada o confundida
+							li Verdadera asociación
+							
+							
+						p Antes de que una asociación observada pueda llamarse “asociación verdadera”, se debe descartar otras explicaciones.
+						p Cuando se descartan estas explicaciones se dice que un estudio es válido. El objetivo principal de la mayoría de investigaciones epidemiológicas es obtener la estimación válida (verdadera) de una medida de efecto de interés.
+						p Si no hay imperfecciones (diseño, colección y análisis de datos), entonces se puede decir que el estudio es válido. Si hay imperfecciones, entonces el grado de distorsión de los resultados que impide alcanzar conclusiones correctas se llama sesgo.
+						p Nos esforzamos por tener un estudio válido, el sesgo es lo que nos impide obtener resultados válidos. Validez sólo se puede establecer cuando los errores sistemáticos y aleatorios  se hayan descartado.
+						p La otra característica de la medición es la precisión en los estudios, Dos fuentes diferentes de imprecisión que pueden ocurrir cuando la estimación de una relación exposición-enfermedad:
+						
+						ul
+							li Error sistemático (problema de validez)
+							li Error aleatorio (problema de precisión) 
+							li Error sistemático y aleatorio se pueden distinguir en términos de tiro a un blanco
+							
+						p La validez de un estudio tiene 2 componentes:
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#1' data-toggle='tab') Validez Interna
+								li: a(href='#2' data-toggle='tab') Validez Externa
+								
+							+set('content')
+								div.tab-pane.fade.active.in#1
+									ul
+										li Selección adecuada de los grupos de estudio y
+										li Falta de error en los instrumentos de medición
+											ul
+												li ¿Es el estudio verdadero?
+								div.tab-pane.fade#2
+									ul
+										li Implica la capacidad de generalizar más allá de la serie de observaciones a un universo
+											ul
+												li Se pueden generalizar las asociaciones a otras poblaciones?
+												
+
+
+						p Es importante anotar que se debe tener validez interna antes de la validez externa
+						
+						ul
+							li Sesgo de Selección.
+							li Sesgo de Información.
+							li Confusión.
+							
+						p Se entiende por Sesgo la desviación de los resultados o inferencias de la verdad, o procesos que conducen a tal desviación. Cualquier tendencia en la recolección, análisis, interpretación, publicación o revisión de los datos que pueden conducir a conclusiones que son sistemáticamente diferentes de la verdad.
+						
+						
+						
+						
+									
+					
+						//- Material modulo
+						+material-modulo('material-mod-1')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=340011&chapterid=9678', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=340011&chapterid=9680', 'enabled', '#test-mod-1')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

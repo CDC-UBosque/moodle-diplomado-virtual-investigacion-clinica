@@ -60,34 +60,26 @@ div.curso-cc
 								p La elección del diseño del estudio debe explicarse y debe ser representado en términos claros. Debe tener en cuenta que, si no se presentan aspectos importantes de la metodología o no se describen, se aconseja al lector ser precavido. Si, por ejemplo, el método de aleatorización no se especifica, como suele ser el caso, no se debe suponer y aceptar que la aleatorización tuvo lugar (7). Los métodos estadísticos deben describirse teniendo en cuenta parámetros y procedimientos estadísticos, con referencias a la literatura especializada. 
 
 								p En el cuadro No 1, se plantean las preguntas que pueden realizarse cuando se lee la metodología: (8)
-
-								p Cuadro No 1. Preguntas para evaluar la metodología. 
 								
 								//- ---------------- 
-								//- ---------------- Tabs
-								//- ---------------- 
-								+tabs-containers
-									+set('titles')
-										li.active: a(href='#1' data-toggle='tab') 1
-										li: a(href='#2' data-toggle='tab') 2
-										li: a(href='#3' data-toggle='tab') 3
-										li: a(href='#4' data-toggle='tab') 4
-										li: a(href='#5' data-toggle='tab') 5
-										li: a(href='#6' data-toggle='tab') 6
-										
-									+set('content')
-										div.tab-pane.fade.active.in#1
-											p ¿El diseño del estudio es adecuado para cumplir con los objetivos planteados? Recuerde que las investigaciones se pueden dividir en estudios de intervención, estudios de cohortes, estudios de casos y controles, estudios transversales y estudios ecológicos.
-										div.tab-pane.fade#2
-											p ¿Se establece si el estudio es de naturaleza confirmatoria, exploratoria o descriptiva?
-										div.tab-pane.fade#3
-											p ¿El punto final del estudio está definido con precisión?
-										div.tab-pane.fade#4
-											p ¿Qué medida estadística se emplea para caracterizar el punto final?
-										div.tab-pane.fade#5
-											p ¿Los estudios epidemiológicos, por ejemplo, dan la incidencia (tasa de nuevos casos), prevalencia (número actual de casos), mortalidad (proporción de población que muere de la enfermedad en cuestión), letalidad (proporción de aquellos con la enfermedad que fallece) o la tasa de ingreso hospitalario (proporción de la población ingresada en el hospital a causa de la enfermedad)?
-										div.tab-pane.fade#6
-											p ¿Son el área geográfica, la población, el período de estudio (incluida la duración de seguimiento), y los intervalos entre investigaciones descritos en detalle?
+								//- ---------------- Tables
+								//- ----------------
+								+tables-containers('')
+									+set('thead')
+										tr
+											th Cuadro No 1. Preguntas para evaluar la metodología. 
+									+set('tr')
+										tr
+											td 
+												ul
+													li ¿El diseño del estudio es adecuado para cumplir con los objetivos planteados? Recuerde que las investigaciones se pueden dividir en estudios de intervención, estudios de cohortes, estudios de casos y controles, estudios transversales y estudios ecológicos.
+													li ¿Se establece si el estudio es de naturaleza confirmatoria, exploratoria o descriptiva?
+													li ¿El punto final del estudio está definido con precisión?
+													li ¿Qué medida estadística se emplea para caracterizar el punto final?
+													li ¿Los estudios epidemiológicos, por ejemplo, dan la incidencia (tasa de nuevos casos), prevalencia (número actual de casos), mortalidad (proporción de población que muere de la enfermedad en cuestión), letalidad (proporción de aquellos con la enfermedad que fallece) o la tasa de ingreso hospitalario (proporción de la población ingresada en el hospital a causa de la enfermedad)?
+													li ¿Son el área geográfica, la población, el período de estudio (incluida la duración de seguimiento), y los intervalos entre investigaciones descritos en detalle?
+
+											
 											
 
 								p El diseño y la implementación del estudio son descritos por Altman (1991), Trampisch y Windeler (2000) (7, 9).  En estudios experimentales, la representación precisa del diseño y la ejecución son vitales. La precisión de un método debe ser declarada, es decir, su fiabilidad (precisión) y validez (corrección). El poder explicativo de los resultados de un estudio clínico se mejora mediante la inclusión de un grupo control (controles activos, históricos o placebo) y por la asignación aleatoria de pacientes a los diferentes brazos del estudio. La calidad también se puede aumentar cegando a los investigadores, lo que garantiza un tratamiento y observación idénticos para todos los participantes del estudio. 
@@ -114,40 +106,29 @@ div.curso-cc
 								
 							+accordion-item('#accordion1', '#box4', 'box4', '4.4. Discusión')
 								p En esta sección, el autor debe discutir sus resultados franca y abiertamente, independientemente del tipo de estudio. La discusión tiene como objetivo la comparación de los hallazgos con el estatus quo, respondiendo las siguientes preguntas (ver cuadro No 2):
-
-								p Cuadro No 2. Preguntas para evaluar la discusión.
+								
 								
 								//- ---------------- 
-								//- ---------------- Tabs
-								//- ---------------- 
-								+tabs-containers
-									+set('titles')
-										li.active: a(href='#7' data-toggle='tab') 1
-										li: a(href='#8' data-toggle='tab') 2
-										li: a(href='#9' data-toggle='tab') 3
-										li: a(href='#10' data-toggle='tab') 4
-										li: a(href='#11' data-toggle='tab') 5
-										li: a(href='#12' data-toggle='tab') 6
-										li: a(href='#13' data-toggle='tab') 7
-										li: a(href='#14' data-toggle='tab') 8
-										
-									+set('content')
-										div.tab-pane.fade.active.in#7
-											p ¿Cómo el estudio se ha agregado al cuerpo de conocimiento sobre el tema dado? 
-										div.tab-pane.fade#8
-											p ¿Qué conclusiones se pueden sacar? 
-										div.tab-pane.fade#9
-											p ¿Los hallazgos del estudio conducirán al autor a reconsiderar o cambiar su propio comportamiento profesional, modificar un tratamiento o tener en cuenta factores previamente no considerados? 
-										div.tab-pane.fade#10
-											p ¿Los hallazgos sugieren la necesidad de realizar investigaciones más profundas? 
-										div.tab-pane.fade#11
-											p ¿El estudio plantea nuevas preguntas sin respuesta? 
-										div.tab-pane.fade#12
-											p ¿Cuáles son las implicaciones de los resultados para la ciencia, la rutina clínica, la atención al paciente y la práctica médica? 
-										div.tab-pane.fade#13
-											p ¿Los hallazgos concuerdan con la mayoría de los estudios anteriores? Si no, ¿cómo podría explicarse? 
-										div.tab-pane.fade#14
-											p ¿Los resultados parecen plausibles biológicamente o desde el punto de vista médico?
+								//- ---------------- Tables
+								//- ----------------
+								+tables-containers('')
+									+set('thead')
+										tr
+											th Cuadro No 2. Preguntas para evaluar la discusión.
+									+set('tr')
+										tr
+											td 
+												ul
+													li ¿Cómo el estudio se ha agregado al cuerpo de conocimiento sobre el tema dado? 
+													li ¿Qué conclusiones se pueden sacar? 
+													li ¿Los hallazgos del estudio conducirán al autor a reconsiderar o cambiar su propio comportamiento profesional, modificar un tratamiento o tener en cuenta factores previamente no considerados? 
+													li ¿Los hallazgos sugieren la necesidad de realizar investigaciones más profundas? 
+													li ¿El estudio plantea nuevas preguntas sin respuesta? 
+													li ¿Cuáles son las implicaciones de los resultados para la ciencia, la rutina clínica, la atención al paciente y la práctica médica? 
+													li ¿Los hallazgos concuerdan con la mayoría de los estudios anteriores? Si no, ¿cómo podría explicarse? 
+													li ¿Los resultados parecen plausibles biológicamente o desde el punto de vista médico?
+
+
 											
 
 								p Una buena discusión debe contener el análisis crítico de las limitaciones del estudio. Por ejemplo, debe contener las fuentes de errores aleatorios o sesgos, y cómo han afectado los resultados.  Incluso con una cuidadosa planificación y ejecución del estudio, los sesgos no pueden ser enteramente excluidos, puede haber, por ejemplo, una inesperada alta tasa de pérdida durante el seguimiento (a través de pacientes que se niegan a continuar en el estudio). 

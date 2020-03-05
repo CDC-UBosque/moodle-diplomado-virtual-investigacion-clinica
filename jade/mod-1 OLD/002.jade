@@ -1,0 +1,104 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 1')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-1')
+						
+						h2 2. Introducción a la epidemiología e investigación clínica.
+										
+						h3 2.1. ¿Cómo se inicia y funciona la investigación clínica?
+						
+						p La anatomía de la investigación consiste en su estructura, su armazón, y se expresa en el protocolo, el plan escrito del estudio. El protocolo no es sólo una exigencia de los organismos financiadores, ejerce una función científica vital, la de ayudar al investigador a organizar su investigación de un modo lógico, centrado y eficiente. Nunca hay que caer en la tentación, de comenzar la planificación elaborando los formularios de recogida de datos sin antes haber plasmado por escrito los objetivos, la hipótesis y los métodos de la investigación. La redacción del protocolo es la primera fase de la publicación futura del artículo, que mantendrá la mayor parte de los apartados del mismo y sólo tendrá que desarrollar los resultados encontrados y su discusión. Los apartados de una propuesta de investigación están tratados mas adelante. 
+
+						p De acuerdo a Hulley (1), por bien que un protocolo esté escrito y estructurado, necesita una "fisiología", un funcionamiento, adecuados. Para ver cómo funciona la investigación debemos fijarnos en el resultado final de un proyecto de investigación, el paso de emitir las conclusiones. El resultado final de la investigación tendrá que efectuar dos tipos de inferencias, su validez interna (el grado en que las conclusiones de los investigadores describen correctamente lo que sucedió en el estudio) y su validez externa (el grado en que sus conclusiones son aplicables a la población ajena al estudio). Al interpretar un estudio, el investigador busca maximizar primero la validez interna del estudio y después la validez externa. Al planificarlo, por el contrario, el orden se invierte: primero se plantea la pregunta en el universo de interés, luego diseña un plan que proporcione inferencias de una validez satisfactoria y, por último, ejecuta el estudio de un modo que refuerce dichas inferencias. La selección de una muestra representativa de la población tiene que ver con la validez externa y la reducción de sesgos o errores sistemáticos; el control de la confusión y la disminución del error aleatorio son elementos que refuerzan la validez interna.
+
+						p El desarrollo de la propuesta de investigación atraviesa cuatro versiones en secuencia,  cada cual más elaborada y detallada que la precedente. 
+						
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#1' data-toggle='tab') 1
+								li: a(href='#2' data-toggle='tab') 2
+								li: a(href='#3' data-toggle='tab') 3
+								li: a(href='#4' data-toggle='tab') 4
+								
+							+set('content')
+								div.tab-pane.fade.active.in#1
+									p La primera versión consiste en la pregunta del estudio, una frase que especifica lo que responderá el estudio. 
+								div.tab-pane.fade#2
+									p La segunda versión consiste en un esquema de una a dos páginas de los elementos del estudio, y constituye una lista de apartados normalizada que sirve de recordatorio de todos los componentes de la investigación y clarifica los pasos que dar. 
+								div.tab-pane.fade#3
+									p La tercera versión es el protocolo del estudio  propiamente dicho, un desarrollo del esquema anterior, que se convierte en el documento principal utilizado para planificar el estudio. 
+								div.tab-pane.fade#4
+									p Por último, la cuarta versión es el manual de operaciones, el conjunto de instrucciones de los métodos, de los materiales y de todos los procedimientos del estudio, destinado a establecer un enfoque uniforme y normalizado con objeto de ejecutar el estudio con un buen control de calidad.
+									
+						p En la escritura del proyecto de investigación hay que seguir una serie de pasos sucesivos: escoger la pregunta de investigación; convertir la idea en una hipótesis comprobable; leer y empezar a escribir las distintas partes del trabajo (esbozos de resumen, objetivos específicos, antecedentes, resultados preliminares, diseño, métodos); trabajar en equipo durante todo el proceso para generar ideas nuevas, criticarlas y perfeccionarlas; establecer un conjunto coherente de objetivos específicos, centrados en las hipótesis formuladas; utilizar mediciones cuantitativas; explicar la aplicabilidad práctica del resultado de la investigación para reforzar el valor del proyecto; no desanimarse ante una negación, si es preciso revisar el proyecto y enviarlo otra vez, comprender que la elaboración de un proyecto es un proceso interactivo, no se pueden tomar las negaciones de los proyectos como cuestiones personales, las críticas negativas no deben turbar la capacidad de identificar los comentarios clave de los revisores, no olvidar nunca que el proceso de revisión, entre otros fines, está en beneficio del investigador (2).
+
+						p Un aspecto decisivo en la confección del proyecto de investigación es la elección del equipo investigador. El investigador principal de un proyecto debe estar enteramente cualificado para dirigir y ejecutarlo. Esto supone que el investigador posea una formación adecuada. La formación clínica no capacita para hacer investigación. Este ejercicio debe sustentarse en la garantía de una dedicación temporal en el tiempo de trabajo del investigador, no en su tiempo libre.
+
+						p Cuando el investigador posee escasa experiencia, debe recibir el apoyo de un mentor con una carrera investigadora y experiencia. Además del investigador, un proyecto se refuerza con coinvestigadores, colaboradores y asesores suficientemente cualificados.
+
+						p La buena investigación debe hacerse en lugares en donde haya el suficiente apoyo institucional y material. Esto supone disponer de tiempo de trabajo para investigar, que debe garantizarse y documentarse. Además, debe haber recursos adecuados en personal (mentores, personal de apoyo, estadísticos, técnicos), espacio (para laboratorio, despachos, reuniones, almacenamiento de material) e institucional (masa de investigadores mínima, instalaciones comunes, personal para reparaciones).
+
+								
+									
+					
+						//- Material modulo
+						+material-modulo('material-mod-1')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=340011&chapterid=9673', 'enabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=340011&chapterid=9675', 'enabled', '#test-mod-1')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

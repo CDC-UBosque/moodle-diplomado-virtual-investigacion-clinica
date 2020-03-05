@@ -1,0 +1,99 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 1')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						+modulo-video('video-mod-1')
+						
+						h2 Generalidades de epidemiología e investigación clínica
+										
+						h3 Tutor: Dr.  Héctor Jaime Posso Valencia, MD, MSc, MHA, PhD
+						
+						p Médico de la Universidad Industrial de Santander, Maestría en Epidemiología de la Universidad del Valle, Maestría en Administración en Salud de la Pontificia Universidad Javeriana y Doctorado en Salud Pública del Instituto Nacional de Salud Pública de México. Investigador en el área clínica, epidemiológica y de servicios de salud con publicaciones en revistas nacionales e internacionales. 
+						
+						
+						h2 1. Objetivos
+							
+							
+						
+						//- ---------------- 
+						//- ---------------- Tabs
+						//- ---------------- 
+						+tabs-containers
+							+set('titles')
+								li.active: a(href='#1' data-toggle='tab') 1
+								li: a(href='#2' data-toggle='tab') 2
+								li: a(href='#3' data-toggle='tab') 3
+								li: a(href='#4' data-toggle='tab') 4
+								li: a(href='#5' data-toggle='tab') 5
+								
+							+set('content')
+								div.tab-pane.fade.active.in#1
+									p Discutir las diferentes etapas por las que debe pasar un proyecto de investigación clínica, desde la concepción de la idea a la concreción de una propuesta de investigación.
+								div.tab-pane.fade#2
+									p Describir y analizar las diferentes estrategias de reclutamiento y mecanismos de selección de participantes en los estudios de investigación clínica.
+								div.tab-pane.fade#3
+									p Discutir las diferentes amenazas a la validez y precisión de las mediciones en los estudios de investigación clínica.
+								div.tab-pane.fade#4
+									p Describir y analizar las diferentes explicaciones que tienen las asociaciones encontradas en los estudios analíticos en investigación clínica.
+								div.tab-pane.fade#5
+									p Enunciar y discutir los componentes de una propuesta de investigación clínica.
+									
+						
+									
+					
+						//- Material modulo
+						+material-modulo('material-mod-1')
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('#', 'disabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=340011&chapterid=9674', 'enabled', '#test-mod-1')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

@@ -30,96 +30,12 @@ div.curso-cc
 						
 						+modulo-video('video-mod-1')
 						
-						h2 7. ¿Cómo se realiza la planificación de las mediciones? precisión y exactitud.
+						h2 9. ¿Qué es precisión y exactitud?
 						
-						h3 Sesgo de información (15)
-						
-						p Es el error sistemático que resulta de las diferencias en la forma en la cual se obtiene la información de la exposición o enfermedad en los grupos de estudio. Una pregunta que se debe plantear para detectarlo es:
-						
-						ul
-							li ¿Se obtiene de manera diferente la información entre los grupos que se comparan?
-							
-							
-						p Ejemplos de este tipo de sesgo son:
-						
-						
-						//- ---------------- 
-						//- ---------------- Accordion
-						//- ---------------- 
-						+accordion('accordion1')
-							+accordion-item('#accordion1', '#box1', 'box1', 'Sesgo de memoria')
-								ul
-									li Cuando los individuos con una enfermedad particular recuerdan y relatar la exposición diferente a los que no tienen la enfermedad.
-									li Cuando los que han estado expuestos a un agente dañino relatan los acontecimientos posteriores con un grado de certeza o exactitud diferente  a los no expuestos.
-									li Ejemplo: los padres de niños con defectos de nacimiento pueden ser más propensos a recordar exposiciones específicas.
-							+accordion-item('#accordion1', '#box2', 'box2', 'Sesgo del entrevistador ')
-								ul
-									li Diferencia sistemática en solicitar, escribir o interpretar la información de los participantes del estudio.
-									li Ejemplo:Los entrevistadores hacen las preguntas a los participantes de manera diferente dependiendo de la exposición, la enfermedad o estado de intervención.
-									li Cuando se realizan preguntas ambiguas
-							+accordion-item('#accordion1', '#box3', 'box3', 'Errores de clasificación')
-								ul
-									li Medidas incorrectas.
-									li Ocurre cuando los participantes se categorizan erróneamente con respecto al estado de enfermedad o exposición.
-									li Ejemplo: Ha fumado alguna vez.
-							+accordion-item('#accordion1', '#box4', 'box4', 'Diferencial')
-								ul
-									li La tasa de errores de clasificación es diferencial en los diferentes grupos de estudio
-									li La información de la exposición en un grupo es más precisa que la del otro grupo
-									li Ejemplo: Las mujeres que tienen hijos con una malformación tiende a recordar más infecciones durante el embarazo que las madres de niños sin malformaciones que resulta en una aparente asociación cuando no la hay.
-									li Error de clasificación diferencial puede conducir a:
-										ul
-											li Una asociación cuando realmente no la hay o 
-											li Una aparente falta de asociación cuando realmente existe.
-							+accordion-item('#accordion1', '#box5', 'box5', 'No-diferencial')
-								ul
-									li Estos errores de clasificación no están relacionados con el estado de exposición o con el estado de caso/control.
-									li Ocurre cuando hay un error en como se clasifica la exposición y se produce por igual en los grupos de enfermos y no enfermos.
-									li El error de clasificación no-diferencial generalmente conduce a un efecto diluido del OR o RR (efecto nulo).
-										ul
-											li Menos probabilidades de encontrar una asociación cuando ésta existe.
-											
-							+accordion-item('#accordion1', '#box6', 'box6', 'Sesgo de diagnóstico de sospecha')
-								ul
-									li Se produce cuando un grupo de estudio se somete a un mayor escrutinio de diagnóstico que otro.
-							+accordion-item('#accordion1', '#box7', 'box7', 'El efecto Clever Hans (sesgo de sumisión) ')
-								ul
-									li Se produce cuando los sujetos tienden a modificar sus respuestas sistemáticamente en la dirección que ellos perciben el investigador necesita.
-									
-						
-						
-						
-						h3 Control de lo sesgos en los estudios clínicos
-						
-						p Existen varias estrategias para controlar los sesgos en investigación clínica. Estas estrategias a grandes rasgos son:
-						
-						
-						+accordion('accordion1')
-							+accordion-item('#accordion1', '#box8', 'box8', 'Para el control de sesgos de selección')
-								ul
-									li Evaluar cuidadosamente las implicaciones en la selección de la participantes para el estudio.
-										ul
-											li Casos y controles deben venir de la base misma población.
-									li Utilizar los mismos criterios cuando se seleccionan casos y controles.
-									li Reclutar todos los casos en un tiempo y región definida.
-									li Garantizar el seguimiento de la población.
-									li Considerar el uso de varios grupos de control.
-									li Elegir los grupos de estudio que son representativos de los grupos en la población 
-									li Establecer incentivos para obtener una alta tasa de participación.
-									
-							+accordion-item('#accordion1', '#box9', 'box9', 'Para el control de sesgos de información')
-								ul
-									li Preparar un manual de procedimientos detallado que cubra todos los aspectos de la colección de datos.
-									li Mantener un estrecho control de calidad (enviar repeticiones para el análisis).
-									li “Cegar” el personal que colecta  y abstrae datos cuando sea posible.
-									li Entrenar y certificar a todo el personal que colecta datos.
-									li Re-entrenar personal periódicamente.
-									li Fuentes de información deben ser similares para todos los participantes .
-									li Los participantes no deben ser conscientes de las hipótesis específicas bajo investigación.
-									li Información  sobre la enfermedad debe obtenerse sin el conocimiento de estado de exposición.
-									li Definición de la exposición y de la enfermedad debe ser estándar .
-									li Cuestionarios estructurados.
-									li El uso de registros preexistentes.
+						p La precisión es el número de representaciones (observaciones) significativas de las que se toman los datos o se realizan lecturas. En general, cuanto mayor sea el número de representaciones (observaciones) significativas, mayor será la precisión (2). 
+						p El concepto de precisión guarda relación con el concepto de aleatoriedad o dependencia del azar puro, entendido como un fenómeno carente de un orden preestablecido o que se puede predecir (2). 
+						p En contraposición con los sesgos, el papel del azar en los resultados del estudio escapa en general al dominio del investigador, y en general el manejo de esta fuente de error se limita a estimar el valor del azar en los resultados del estudio, mediante valores de p o intervalos de confianza de las estimaciones. Otra alternativa que permite gestionar el papel del azar está en la representatividad de la muestra y su capacidad de reducir la ocurrencia de errores por el papel del azar como lo son la posibilidad de rechazar la hipótesis nula por efecto de variaciones aleatorias y no de diferencias reales en la población (error tipo I) o la incapacidad de rechazar la hipótesis nula por falta de representatividad en el número de observaciones a pesar de las diferencias reales (error tipo II), este último muy relacionado con el tamaño de la muestra. 
+						p Finalmente, la exactitud es la capacidad de lograr un resultado o hacer una acción (investigar) sin cometer errores. En epidemiología se entiende la exactitud como la combinación de validez y precisión, es decir la capacidad de acertar el blanco de forma insesgada y confiable.
 						
 						
 						

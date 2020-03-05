@@ -1,0 +1,74 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 0')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						h2 Carta bienvenida director académico
+										
+						h3 Apreciados participantes del Diplomado
+						
+						p En nombre de los especialistas que se han encargado del diseño de los contenidos para este diplomado virtual y que los acompañarán en el desarrollo de cada una de las actividades planteadas, quiero darles la bienvenida.
+						p En primera medida es importante conocer y entender la importancia del abordaje de las dislipidemias como uno de los principales factores de riesgo cardiovascular, junto a la diabetes y la hipertensión arterial.
+						p En este diplomado se pretende brindar herramientas para establecer un enfoque integral del paciente con dislipidemias, teniendo en cuenta aspectos como:  fisiología de los lípidos, Guías de Práctica Clínica en el Área de los Lípidos, optimización de la Terapia Hipolipemiante, Hipercolesterolemia Familiar y futuro en el manejo de los lípidos.
+						p Esperamos que los contenidos de este diplomado contribuyan en el ejercicio profesional de cada uno de ustedes y sea aplicable en el abordaje integral de sus pacientes.
+						
+						
+						h3 Alvaro Fernando Burbano Delgado
+						
+						h4 Director Académico Diplomado<br/>Universidad El Bosque
+									
+						
+					
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('#', 'disabled', '#', 'disabled', '#test-mod-0')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			
