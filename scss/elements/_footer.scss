@@ -9,10 +9,12 @@
 		grid-gap: 1rem;
 		background: none;
 		justify-items: center;
+		border-top: 1px solid $color_brand_blue;
 		@include display-grid;
-		@include grid-parent-1-columns (1fr);
-		@include max-width;
-		margin: 2rem auto;
+		@include grid-parent-2-columns (1fr, 1fr);
+		//@include max-width;
+		margin: auto;
+		padding: 2rem 0;
 	    
 	    @media (max-width: $mobile){
 		    @include grid-parent-1-columns (1fr);
@@ -25,7 +27,7 @@
 				max-height: initial;
 		    }
 		    
-		    /*&:nth-child(1){
+		    &:nth-child(1){
 			    justify-self: right;
 			    @include grid-child-column (1, 2);
 				@include grid-child-row (1, 2);
@@ -62,7 +64,7 @@
 					@include grid-child-row (3, 4);
 			    }
 				
-		    }*/
+		    }
 		    
 	    }
 	    

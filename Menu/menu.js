@@ -14,7 +14,7 @@ $('#test-mod-1').html('<a class="white-btn" href="#">Evaluación &rsaquo;</a><a 
 
 
 // footer curso amgen #1
-//$('#footer').html('<div><img src="https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-herramientas-para-la-gestion-socioambiental-en-la-industria-del-gas/images/svg/logo-ueb.svg" alt="Universidad El Bosque"/></div><div><span>© Todos los derechos reservados</span></div>');
+$('#footer').html('<div><img src="https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-investigacion-clinica-amgen/images/assets/logo-amgen.svg" alt="Amgen"/></div><div><img src="https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-investigacion-clinica-amgen/images/assets/logo-UEB.svg" alt="Universidad El Bosque"/></div><div><span>© Todos los derechos reservados</span></div>');
 
 
 //

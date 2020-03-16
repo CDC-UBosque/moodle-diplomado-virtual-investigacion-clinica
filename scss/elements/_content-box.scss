@@ -18,7 +18,7 @@
 		//@include grid-parent-12-rows (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto);
 		
 		#menu{
-			@include grid-child-column (2, 12);
+			@include grid-child-column (1, 13);
 			@include grid-child-row (1, 2);
 		}
 		

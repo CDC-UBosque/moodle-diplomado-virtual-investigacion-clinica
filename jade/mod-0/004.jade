@@ -1,0 +1,123 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 0')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						h1 Lineamientos
+									
+						p Para el desarrollo exitoso del programa, la División de Educación Continuada de la Universidad El Bosque ha definido los siguientes lineamientos que deben ser cumplidos para realizar y aprobar el Diplomado. Por favor lea con atención las siguientes indicaciones:
+						
+						ol
+							li El programa es de carácter virtual con una duración de  100 horas. Se desarrollará a través de la plataforma Moodle 3.4, la cual le permitirá avanzar en su aprendizaje en un entorno seguro, amigable e intuitivo al cual podrá acceder a cualquier hora y desde donde usted desee.
+	
+							li Para facilitar su acceso a la plataforma, le sugerimos que lea el Instructivo de Ingreso que le ha sido enviado previamente a su correo electrónico. Si llega a tener inconvenientes para ingresar, por favor escríbanos a 'Coordinacion TIC'  
+								a(href='mailto:support@coordinaciontic.freshdesk.com' target='_blank')    support@coordinaciontic.freshdesk.com
+	
+							li Le recomendamos descargar e instalar Adobe Reader 11 para facilitar la visualización de los instructivos y demás documentos relacionados con el desarrollo del Diplomado. En caso de que no lo tenga instalado, puede descargarlo sin costo en este vínculo  
+								a(href='https://get.adobe.com/es/reader/' target='_blank')    https://get.adobe.com/es/reader/
+	
+							li Si desea conocer más acerca de la Política de Educación Virtual y a Distancia de la Universidad El Bosque, puede descargarla en este vínculo:     
+								a(href='https://www.unbosque.edu.co/sites/default/files/2017-06/politica_educacion_virtual_distancia.pdf' target='_blank')    https://www.unbosque.edu.co/sites/default/files/2017-06/politica_educacion_virtual_distancia.pdf
+								
+						
+													
+						h2 Requerimientos técnicos para el uso de la plataforma virtual
+						
+						p Para asegurar un acceso adecuado a los recursos virtuales, se recomienda que los usuarios dispongan como mínimo de los siguientes recursos:
+						
+						ul
+							li SISTEMA OPERATIVO: Windows  XP  o  versión superior, Sistema OS o Linux.
+							li NAVEGADORES  WEB 
+							ul
+								li Mozilla Firefox
+								li Google Crome
+							li PLUGIN
+							ul
+								li Zoom Meetings
+								li Adobe Acrobat Reader
+							li COMPUTADOR
+							ul
+								li Procesador  Pentium IV o superior a 2.8 mHz
+								li Memoria  RAM 1 G
+								li Tarjeta de Red
+							li CONEXIÓN A INTERNET
+							ul
+								li Wifi
+								li Acceso a operador de  internet  
+								li Se recomienda conexión a internet por Cable
+	
+	
+	
+						h2 Instructivo de ingreso 
+						
+						p Apreciado participante,
+	
+						p A continuación se describe el procedimiento de inscripción, matrícula e ingreso al Diplomado en herramientas para la gestión socio-ambiental en la industria de Gas, Lea cuidadosamente estas instrucciones y si tiene alguna inquietud, comuníquese al correo electrónico    
+							a(href='mailto:educonsoporte@unbosque.edu.co' target='_blank')    educonsoporte@unbosque.edu.co
+	
+	
+	
+	
+						p Cordialmente,
+						
+						h4 María del Rosario Bozón G.
+						h5 Directora Educación Continuada
+							br/ Universidad El Bosque
+						
+						
+								
+								
+								
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=345205&chapterid=9785', 'enabled', '#', 'disabled', '#test-mod-0')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

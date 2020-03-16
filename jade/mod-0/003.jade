@@ -1,0 +1,66 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc.article
+			
+				//- menu
+				div#menu
+				
+				//- header	
+				div#banner
+					+header-block('header-interns', 'Módulo 0')
+			
+				
+				//- ---------------- 
+				//- ---------------- white container
+				//- ---------------- 
+				article.container-content
+				
+					//- ---------------- 
+					//- ---------------- Left content
+					//- ---------------- 
+					div.content-left
+						
+						h1 Cronograma
+					
+						+video('https://ubosquemoodle.unbosque.edu.co/diseno/cursos/diplomado-investigacion-clinica-amgen/pdf/mod-0/cronograma-investigacion-clinica.pdf')
+						
+						
+								
+								
+								
+						
+						
+						
+					//- ---------------- 
+					//- ---------------- Right content
+					//- ---------------- 
+					div.content-right
+						
+						div.blocks
+						
+							+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=345205&chapterid=9764', 'enabled', '#', 'disabled', '#test-mod-1')
+									
+								
+						
+						
+					
+	//- footer section			
+	+footer
+					
+				
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

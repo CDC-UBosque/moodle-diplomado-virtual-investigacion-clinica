@@ -44,11 +44,12 @@
 		word-break: break-word;
 		padding: .5rem 1rem;
 		display: inline-block;
+		font-style: italic;
 		@include font_universal (
 			$font_family_line_height: 51px,
-			$font_family_weight: 300,
+			$font_family_weight: 600,
 			$font_family_size: 50px,
-			$font_family_color: $color_text,
+			$font_family_color: $color_brand_blue,
 			$font_family_letter_spacing: 0,
 			$font_family_group: $font_myriad_pro
 		);
@@ -63,11 +64,12 @@
 		display: block;
 		margin-left: 0 !important;
 		margin: 1rem 0 1rem 0 !important;
+		font-style: italic;
 		@include font_universal (
 			$font_family_line_height: 51px !important,
-			$font_family_weight: 300 !important,
+			$font_family_weight: 600 !important,
 			$font_family_size: 41px !important,
-			$font_family_color: $color_text !important,
+			$font_family_color: $color_brand_blue !important,
 			$font_family_letter_spacing: 0,
 			$font_family_group: $font_myriad_pro
 		);
@@ -83,11 +85,12 @@
 		word-break: break-word;
 		display: block;
 		margin: 1rem 0;
+		font-style: italic;
 		@include font_universal (
 			$font_family_line_height: 41px,
-			$font_family_weight: 300,
+			$font_family_weight: 600,
 			$font_family_size: 34px,
-			$font_family_color: $color_text,
+			$font_family_color: $color_brand_blue,
 			$font_family_letter_spacing: 0,
 			$font_family_group: $font_myriad_pro
 		);
@@ -97,11 +100,12 @@
 		word-break: break-word;
 		display: block;
 		margin: 1rem 0;
+		font-style: italic;
 		@include font_universal (
 			$font_family_line_height: 31px,
-			$font_family_weight: 300,
+			$font_family_weight: 600,
 			$font_family_size: 24px,
-			$font_family_color: $color_text,
+			$font_family_color: $color_brand_blue,
 			$font_family_letter_spacing: 0,
 			$font_family_group: $font_myriad_pro
 		);
@@ -111,11 +115,12 @@
 		word-break: break-word;
 		display: block;
 		margin: 1rem 0;
+		font-style: italic;
 		@include font_universal (
 			$font_family_line_height: 28px,
-			$font_family_weight: 300,
+			$font_family_weight: 600,
 			$font_family_size: 20px,
-			$font_family_color: $color_text,
+			$font_family_color: $color_brand_blue,
 			$font_family_letter_spacing: 0,
 			$font_family_group: $font_myriad_pro
 		);
@@ -125,11 +130,12 @@
 		word-break: break-word;
 		display: block;
 		margin: 1rem 0;
+		font-style: italic;
 		@include font_universal (
 			$font_family_line_height: 20px,
-			$font_family_weight: 300,
+			$font_family_weight: 600,
 			$font_family_size: 14px,
-			$font_family_color: $color_text,
+			$font_family_color: $color_brand_blue,
 			$font_family_letter_spacing: 0,
 			$font_family_group: $font_myriad_pro
 		);
@@ -168,6 +174,7 @@
 		hyphens: none;
 		-webkit-hyphens: none;
 		-moz-hyphens: none;
+		color: $color_brand_blue;
 	}
 	
 }
